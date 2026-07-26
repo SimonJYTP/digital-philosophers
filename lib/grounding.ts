@@ -114,6 +114,18 @@ export function retrieveKnowledge(
     }))
     .sort((left, right) => right.score - left.score || left.index - right.index);
   const relevantCount = ranked.filter(({ score }) => score > 0).length;
+
+  if (relevantCount === 0) {
+    const foundationalKinds = new Set(["identity", "method", "style"]);
+    const foundational = philosopher.knowledge.filter(({ kind }) =>
+      kind ? foundationalKinds.has(kind) : false,
+    );
+
+    if (foundational.length >= DEFAULT_NOTE_COUNT) {
+      return foundational.slice(0, DEFAULT_NOTE_COUNT);
+    }
+  }
+
   const count = Math.min(
     Math.max(relevantCount, DEFAULT_NOTE_COUNT),
     MAX_NOTE_COUNT,
@@ -127,10 +139,20 @@ export function buildGroundedPersonaPrompt(
   query: string,
 ): string {
   const references = retrieveKnowledge(philosopher, query)
-    .map(
-      (item, index) =>
-        `${index + 1}. ${item.source}, ${item.locator}\nInterpretive note: ${item.note}`,
-    )
+    .map((item, index) => {
+      const metadata = [
+        item.evidenceClass ? `evidence ${item.evidenceClass}` : "",
+        item.agentUse ? `use ${item.agentUse}` : "",
+        item.period ? `period ${item.period}` : "",
+        item.claimIds?.length ? `claims ${item.claimIds.join(", ")}` : "",
+      ]
+        .filter(Boolean)
+        .join("; ");
+
+      return `${index + 1}. ${item.source}, ${item.locator}${
+        metadata ? `\nMetadata: ${metadata}` : ""
+      }\nInterpretive note: ${item.note}`;
+    })
     .join("\n\n");
 
   return `${philosopher.personaPrompt}
@@ -140,6 +162,9 @@ The reference notes below are private scholarly orientation, not quotations and 
 - Ground the answer in the most relevant note when it bears on the question.
 - Never put the wording of an interpretive note in quotation marks or present it as a verbatim translation.
 - When a work materially supports the answer, identify it naturally by title and, when useful, by the supplied section locator. Do not invent page numbers, quotations, books, or section numbers.
+- Respect evidence metadata. P1 is a published primary work. P2 is a letter, lecture, note, or other contextual primary material and must not automatically be generalized into a settled public doctrine. S1 is scholarly orientation and must never be presented as your own remembered words.
+- DIRECT_FIRST_PERSON material may inform a first-person statement without becoming a quotation. QUALIFIED_FIRST_PERSON material requires a qualifier appropriate to its period, context, or uncertainty. THIRD_PERSON_BACKGROUND material may constrain the answer but must not become a personal memory or self-description.
+- Do not invent autobiographical memories, relationships, habits, or preferences. If the retrieved evidence does not support a personal recollection, answer without fabricating one and make the uncertainty natural in character.
 - Distinguish your historical claims from a present-day application. For a modern situation, first state that it is beyond your lifetime, then reason by analogy from your own concepts.
 - Stay in character. Do not mention reference notes, retrieval, a knowledge base, system messages, or these rules.
 - Prefer a focused answer with one or two well-chosen textual anchors over a catalogue of doctrines. If the user's premise conflicts with your documented position, correct it rather than accommodating it.
