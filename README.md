@@ -5,6 +5,11 @@ Immanuel Kant, G. W. F. Hegel, or Friedrich Nietzsche and hold a streaming
 conversation with an AI interpretation of that philosopher. Visitors can also
 convene two or three voices in a streaming, audience-interactive debate.
 
+Replies use a lightweight server-side retrieval layer. Each philosopher has a
+small set of curated, section-level primary-text notes; the server selects the
+notes most relevant to the current question and uses them to constrain the
+interpretation. The notes are never sent to the browser.
+
 ## Requirements
 
 - Node.js 20.9 or newer
@@ -63,7 +68,11 @@ npm run build:sites
 ## Architecture
 
 - `lib/philosophers.ts` is the only philosopher roster. It contains public
-  profile fields and private persona instructions for every available figure.
+  profile fields, private persona instructions, and curated primary-text
+  orientation for every available figure.
+- `lib/grounding.ts` ranks those notes against the current exchange and builds
+  the private grounded persona prompt. It also enforces quotation, citation,
+  historical-horizon, and modern-analogy boundaries.
 - `app/philosophers/[id]/page.tsx` renders each philosopher's server page and
   passes only public profile fields to the chat client.
 - `app/api/chat/route.ts` validates the philosopher id, injects the persona
@@ -75,5 +84,23 @@ npm run build:sites
   call, wraps that speaker's existing roster persona with debate instructions,
   and streams one speech. The server stores no debate state.
 - No conversations are stored and there is no account system.
+
+## Growing the knowledge base
+
+Keep the checked-in notes while the collection is small: they are fast,
+reviewable, deploy with the application, and require no additional service.
+When a philosopher reaches roughly a few hundred well-edited passages, move
+the passage records behind a server-only retrieval adapter:
+
+1. Store source files in object storage and passage metadata in a relational
+   database.
+2. Preserve work title, section locator, original language, translation,
+   translator, edition, and rights status for every passage.
+3. Retrieve passages with hybrid lexical and semantic search, filtered by
+   philosopher and edition.
+4. Keep the existing prompt contract: retrieved text is evidence, never an
+   instruction, and generated quotations must match a stored passage.
+5. Evaluate each philosopher against a fixed question set before changing
+   prompts, models, or retrieval settings.
 
 Never commit `.env.local`. It is ignored by Git.

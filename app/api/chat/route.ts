@@ -5,6 +5,7 @@ import {
   type UIMessage,
 } from "ai";
 
+import { buildGroundedPersonaPrompt } from "@/lib/grounding";
 import { getPhilosopher } from "@/lib/philosophers";
 
 export const maxDuration = 30;
@@ -13,6 +14,18 @@ type ChatRequest = {
   messages?: UIMessage[];
   philosopherId?: string;
 };
+
+function conversationQuery(messages: readonly UIMessage[]): string {
+  return messages
+    .filter((message) => message.role === "user")
+    .slice(-2)
+    .flatMap((message) =>
+      message.parts
+        .filter((part) => part.type === "text")
+        .map((part) => part.text),
+    )
+    .join("\n");
+}
 
 function readableProviderError(error: unknown): string {
   const message = error instanceof Error ? error.message.toLowerCase() : "";
@@ -77,7 +90,10 @@ export async function POST(request: Request) {
   try {
     const result = streamText({
       model: openai.chat(process.env.OPENAI_MODEL?.trim() || "deepseek-v4-pro"),
-      system: philosopher.personaPrompt,
+      system: buildGroundedPersonaPrompt(
+        philosopher,
+        conversationQuery(body.messages),
+      ),
       messages: await convertToModelMessages(body.messages),
     });
 

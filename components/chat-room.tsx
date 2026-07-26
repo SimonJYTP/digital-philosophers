@@ -100,7 +100,7 @@ export function ChatRoom({
         </div>
         <div className="presence">
           <span aria-hidden="true" />
-          Archive open
+          Primary texts active
         </div>
       </header>
 
@@ -198,7 +198,7 @@ export function ChatRoom({
           </button>
         </div>
         <p className="composer-note">
-          Enter to send · Shift + Enter for a new line · AI interpretation
+          Enter to send · Shift + Enter for a new line · Grounded AI interpretation
         </p>
       </form>
     </section>

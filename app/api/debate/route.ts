@@ -11,6 +11,7 @@ import {
   philosophers,
   type Philosopher,
 } from "@/lib/philosophers";
+import { buildGroundedPersonaPrompt } from "@/lib/grounding";
 
 export const maxDuration = 120;
 
@@ -333,12 +334,14 @@ function debateInstructions({
   topic,
   phase,
   interjection,
+  transcript,
 }: {
   speaker: Philosopher;
   participants: readonly Philosopher[];
   topic: string;
   phase: DebateSpeechPhase;
   interjection?: DebateTranscriptEntry;
+  transcript: readonly DebateTranscriptEntry[];
 }): string {
   const participantNames = participants
     .map((participant) => participant.name)
@@ -351,8 +354,13 @@ function debateInstructions({
     closing:
       "Give your closing statement: distill your position, answer the strongest objection, and leave the audience with a final thought. Do not introduce an unrelated new argument.",
   }[phase];
+  const groundingQuery = [
+    topic,
+    ...transcript.slice(-6).map((entry) => entry.text),
+    interjection?.text ?? "",
+  ].join("\n");
 
-  return `${speaker.personaPrompt}
+  return `${buildGroundedPersonaPrompt(speaker, groundingQuery)}
 
 You are participating in a live philosophical debate with ${participantNames}.
 The topic is: "${topic}".
@@ -429,6 +437,7 @@ export async function POST(request: Request) {
       topic,
       phase,
       interjection,
+      transcript,
     });
     const initialPrompt = `Debate transcript so far:\n\n${formatTranscript(
       transcript,
