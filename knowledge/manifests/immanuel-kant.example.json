@@ -1,0 +1,58 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../source-files/immanuel-kant/kant-groundwork/kant-groundwork-your-edition/source.txt",
+  "work": {
+    "id": "kant-groundwork",
+    "title": "Groundwork of the Metaphysics of Morals",
+    "originalTitle": "Grundlegung zur Metaphysik der Sitten",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1785,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Replace this example with the bibliographic facts for the edition you actually possess."
+  },
+  "edition": {
+    "id": "kant-groundwork-your-edition",
+    "label": "Your edition label",
+    "language": "zh",
+    "translator": "Translator name",
+    "editor": null,
+    "publisher": "Publisher name",
+    "publishedYear": 2024,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "Owning a copy does not necessarily grant redistribution rights.",
+    "r2Key": "sources/immanuel-kant/kant-groundwork/kant-groundwork-your-edition/source.txt"
+  },
+  "passages": [
+    {
+      "id": "kant-groundwork-your-edition-4-421",
+      "sequence": 1,
+      "locator": "Ak 4:421",
+      "citationLabel": "Groundwork, Ak 4:421",
+      "originalText": "Paste the exact original-language excerpt here when licensed or public domain.",
+      "translationText": "在版权允许时，在这里粘贴经过核对的译文片段。",
+      "interpretiveNote": "Test the maxim of an action by asking whether one can at the same time will that it become a universal law.",
+      "themes": [
+        "categorical imperative",
+        "定言命令",
+        "universal law",
+        "普遍法则",
+        "maxim",
+        "准则"
+      ],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1785 mature moral philosophy",
+      "claimIds": [
+        "CLM-0027",
+        "CLM-0028"
+      ],
+      "priority": 90,
+      "status": "active"
+    }
+  ]
+}

@@ -5,6 +5,12 @@ import {
 } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
 
+import {
+  configureRuntimeBindings,
+  type D1Database,
+  type R2Bucket,
+} from "../lib/runtime-bindings";
+
 interface AssetFetcher {
   fetch(request: Request): Promise<Response>;
 }
@@ -22,6 +28,8 @@ interface ImageTransformer {
 
 interface Env {
   ASSETS: AssetFetcher;
+  BOOKS: R2Bucket;
+  DB: D1Database;
   IMAGES: ImageTransformer;
 }
 
@@ -36,6 +44,7 @@ const worker = {
     env: Env,
     ctx: ExecutionContext,
   ): Promise<Response> {
+    configureRuntimeBindings(env);
     const url = new URL(request.url);
 
     if (url.pathname === "/_vinext/image") {

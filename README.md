@@ -70,6 +70,11 @@ npm run build:sites
 - `lib/philosophers.ts` is the only philosopher roster. It contains public
   profile fields, private persona instructions, and curated primary-text
   orientation for every available figure.
+- D1 stores works, editions, and reviewed passage metadata. R2 stores private
+  original source files. The complete ingestion workflow is documented in
+  `knowledge/README.md`.
+- `lib/database-knowledge.ts` retrieves active database passages and merges
+  them with the built-in knowledge fallback.
 - `lib/grounding.ts` ranks those notes against the current exchange and builds
   the private grounded persona prompt. It also enforces quotation, citation,
   historical-horizon, and modern-analogy boundaries.

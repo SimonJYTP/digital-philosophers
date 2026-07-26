@@ -90,7 +90,7 @@ export async function POST(request: Request) {
   try {
     const result = streamText({
       model: openai.chat(process.env.OPENAI_MODEL?.trim() || "deepseek-v4-pro"),
-      system: buildGroundedPersonaPrompt(
+      system: await buildGroundedPersonaPrompt(
         philosopher,
         conversationQuery(body.messages),
       ),

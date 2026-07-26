@@ -26,3 +26,9 @@ yarn-error.log*
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Local knowledge ingestion workspace
+/knowledge/source-files/**
+!/knowledge/source-files/.gitkeep
+/knowledge/generated/
+/knowledge/manifests/*.local.json

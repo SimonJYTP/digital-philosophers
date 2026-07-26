@@ -328,7 +328,7 @@ async function chooseNextSpeaker({
   return nextInRosterOrder(participants, transcript);
 }
 
-function debateInstructions({
+async function debateInstructions({
   speaker,
   participants,
   topic,
@@ -342,7 +342,7 @@ function debateInstructions({
   phase: DebateSpeechPhase;
   interjection?: DebateTranscriptEntry;
   transcript: readonly DebateTranscriptEntry[];
-}): string {
+}): Promise<string> {
   const participantNames = participants
     .map((participant) => participant.name)
     .join(", ");
@@ -360,7 +360,7 @@ function debateInstructions({
     interjection?.text ?? "",
   ].join("\n");
 
-  return `${buildGroundedPersonaPrompt(speaker, groundingQuery)}
+  return `${await buildGroundedPersonaPrompt(speaker, groundingQuery)}
 
 You are participating in a live philosophical debate with ${participantNames}.
 The topic is: "${topic}".
@@ -431,7 +431,7 @@ export async function POST(request: Request) {
       });
     }
 
-    const system = debateInstructions({
+    const system = await debateInstructions({
       speaker,
       participants,
       topic,

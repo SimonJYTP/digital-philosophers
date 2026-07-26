@@ -18,6 +18,8 @@ export type PhilosopherKnowledgeNote = Readonly<{
   locator: string;
   themes: readonly string[];
   note: string;
+  originalExcerpt?: string;
+  translationExcerpt?: string;
   kind?:
     | "identity"
     | "doctrine"
