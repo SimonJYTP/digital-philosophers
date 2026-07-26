@@ -22,6 +22,9 @@
 - Persona system prompts and API credentials are server-only. Never import the
   philosopher roster into a Client Component and never expose a system prompt
   in an API response.
+- Debate sessions are stateless: the browser owns the transcript and sends it
+  with each request. Debate prompts wrap the existing roster persona at request
+  time; never duplicate or alter persona text for debate mode.
 - Keep the app intentionally small: no authentication, persistence, payments,
   UI component library, or client state library unless a future task explicitly
   adds one.

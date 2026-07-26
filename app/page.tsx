@@ -33,9 +33,14 @@ export default function Home() {
             Choose a thinker. Bring a question. Enter a conversation shaped by
             their language, their century, and the limits of what they knew.
           </p>
-          <a href="#philosophers" className="text-link">
-            Browse the archive <span aria-hidden="true">↓</span>
-          </a>
+          <div className="hero-links">
+            <a href="#philosophers" className="text-link">
+              Browse the archive <span aria-hidden="true">↓</span>
+            </a>
+            <Link href="/debate" className="text-link debate-entry-link">
+              Convene a debate <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

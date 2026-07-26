@@ -2,7 +2,8 @@
 
 A small Next.js application where visitors choose Confucius, Socrates,
 Immanuel Kant, G. W. F. Hegel, or Friedrich Nietzsche and hold a streaming
-conversation with an AI interpretation of that philosopher.
+conversation with an AI interpretation of that philosopher. Visitors can also
+convene two or three voices in a streaming, audience-interactive debate.
 
 ## Requirements
 
@@ -68,6 +69,11 @@ npm run build:sites
 - `app/api/chat/route.ts` validates the philosopher id, injects the persona
   prompt on the server, and streams DeepSeek V4 Pro responses using the Vercel
   AI SDK.
+- `app/debate/page.tsx` and `components/debate-room.tsx` provide the debate
+  setup and keep the complete session transcript in the browser.
+- `app/api/debate/route.ts` selects the next speaker in a lightweight model
+  call, wraps that speaker's existing roster persona with debate instructions,
+  and streams one speech. The server stores no debate state.
 - No conversations are stored and there is no account system.
 
 Never commit `.env.local`. It is ignored by Git.
