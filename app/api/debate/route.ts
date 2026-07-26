@@ -12,11 +12,23 @@ import {
   type Philosopher,
 } from "@/lib/philosophers";
 
-export const maxDuration = 60;
+export const maxDuration = 120;
 
 const MAX_TRANSCRIPT_ENTRIES = 120;
 const MAX_ENTRY_LENGTH = 8_000;
 const MAX_TOPIC_LENGTH = 1_000;
+const MAX_SPEECH_SEGMENTS = 3;
+const INITIAL_SPEECH_TOKEN_LIMIT = 900;
+const CONTINUATION_TOKEN_LIMIT = 520;
+
+function speechLooksComplete(text: string): boolean {
+  const normalized = text
+    .trim()
+    .replace(/[*_`]+$/g, "")
+    .trim();
+
+  return /[.!?。！？…]["'”’）)\]}]*$/.test(normalized);
+}
 
 function readableProviderError(error: unknown): string {
   const message = error instanceof Error ? error.message.toLowerCase() : "";
@@ -411,27 +423,86 @@ export async function POST(request: Request) {
       });
     }
 
-    const result = streamText({
-      model,
-      system: debateInstructions({
-        speaker,
-        participants,
-        topic,
-        phase,
-        interjection,
-      }),
-      prompt: `Debate transcript so far:\n\n${formatTranscript(
-        transcript,
-        participants,
-      )}\n\nNow give your ${phase} speech.`,
-      maxOutputTokens: phase === "debate" ? 560 : 440,
-      temperature: 0.75,
-      abortSignal: request.signal,
+    const system = debateInstructions({
+      speaker,
+      participants,
+      topic,
+      phase,
+      interjection,
+    });
+    const initialPrompt = `Debate transcript so far:\n\n${formatTranscript(
+      transcript,
+      participants,
+    )}\n\nNow give your ${phase} speech. Finish every sentence and conclude the speech cleanly.`;
+    const encoder = new TextEncoder();
+    const speechStream = new ReadableStream<Uint8Array>({
+      async start(controller) {
+        let streamedText = "";
+
+        try {
+          for (
+            let segmentIndex = 0;
+            segmentIndex < MAX_SPEECH_SEGMENTS;
+            segmentIndex += 1
+          ) {
+            const isContinuation = segmentIndex > 0;
+            const prompt = isContinuation
+              ? `Your previous output was interrupted before the speech was complete. The audience has already seen this exact ending:
+
+${streamedText.slice(-1_600)}
+
+Continue from the exact next word without repeating any visible text. Finish the interrupted sentence, complete the argument concisely, and end with complete sentence punctuation.`
+              : initialPrompt;
+            const result = streamText({
+              model,
+              system,
+              prompt,
+              maxOutputTokens: isContinuation
+                ? CONTINUATION_TOKEN_LIMIT
+                : INITIAL_SPEECH_TOKEN_LIMIT,
+              temperature: isContinuation ? 0.55 : 0.75,
+              abortSignal: request.signal,
+            });
+
+            for await (const delta of result.textStream) {
+              streamedText += delta;
+              controller.enqueue(encoder.encode(delta));
+            }
+
+            const finishReason = await result.finishReason;
+
+            if (
+              finishReason === "content-filter" ||
+              finishReason === "error"
+            ) {
+              throw new Error(
+                "The language model stopped before completing the speech.",
+              );
+            }
+
+            if (
+              finishReason !== "length" &&
+              speechLooksComplete(streamedText)
+            ) {
+              controller.close();
+              return;
+            }
+          }
+
+          throw new Error(
+            "The language model could not finish the speech after automatic continuation.",
+          );
+        } catch (error) {
+          console.error("Debate speech stream error:", error);
+          controller.error(error);
+        }
+      },
     });
 
-    return result.toTextStreamResponse({
+    return new Response(speechStream, {
       headers: {
         "Cache-Control": "no-store",
+        "Content-Type": "text/plain; charset=utf-8",
         "X-Debate-Speaker-Id": speaker.id,
       },
     });

@@ -199,16 +199,22 @@ export function DebateRoom({
       const decoder = new TextDecoder();
       let text = "";
 
-      while (true) {
-        const { done, value } = await reader.read();
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
 
-        if (done) {
-          text += decoder.decode();
-          break;
+          if (done) {
+            text += decoder.decode();
+            break;
+          }
+
+          text += decoder.decode(value, { stream: true });
+          updateTranscriptEntry(streamedMessageId, text);
         }
-
-        text += decoder.decode(value, { stream: true });
-        updateTranscriptEntry(streamedMessageId, text);
+      } catch {
+        throw new Error(
+          "The philosopher's reply was interrupted before it finished. Please retry.",
+        );
       }
 
       if (!text.trim()) {
