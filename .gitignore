@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+
+# Next.js output
+/.next/
+/out/
+/dist/
+/.wrangler/
+
+# local environment variables
+.env
+.env.local
+.env.*.local
+
+# logs and local tools
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+.DS_Store
+
+# previous local-only environment, if present
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
