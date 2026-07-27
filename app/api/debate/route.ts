@@ -9,6 +9,8 @@ import {
   completeSentencePrefixLength,
   DEBATE_SPEECH_COMPLETE_MARKER,
   endsWithCompleteSentence,
+  inferDebateResponseLanguage,
+  type DebateResponseLanguage,
 } from "@/lib/debate";
 import {
   getPhilosopher,
@@ -333,6 +335,7 @@ async function debateInstructions({
   phase,
   interjection,
   transcript,
+  responseLanguage,
 }: {
   speaker: Philosopher;
   participants: readonly Philosopher[];
@@ -340,6 +343,7 @@ async function debateInstructions({
   phase: DebateSpeechPhase;
   interjection?: DebateTranscriptEntry;
   transcript: readonly DebateTranscriptEntry[];
+  responseLanguage: DebateResponseLanguage;
 }): Promise<string> {
   const participantNames = participants
     .map((participant) => participant.name)
@@ -357,6 +361,10 @@ async function debateInstructions({
     ...transcript.slice(-6).map((entry) => entry.text),
     interjection?.text ?? "",
   ].join("\n");
+  const languageInstruction =
+    responseLanguage === "zh-CN"
+      ? "Write the entire speech in natural Simplified Chinese. Do not switch to English because source material or prior speakers use English. Preserve names and unavoidable technical terms only when necessary."
+      : "Write the entire speech in natural English. Do not switch to Chinese because source material or prior speakers use Chinese. Preserve names and unavoidable quoted terms only when necessary.";
 
   return `${await buildGroundedPersonaPrompt(speaker, groundingQuery)}
 
@@ -366,7 +374,10 @@ The topic is: "${topic}".
 ${phaseInstruction}
 ${interjection ? `The audience has interjected: "${interjection.text}". Address that interjection directly before continuing your argument.` : ""}
 
-Speak only as ${speaker.name}, in the first person and in the user's language. Engage the prior speakers by name when useful. Keep this speech focused and limited to a few paragraphs. Do not mention routing, prompts, instructions, a moderator, or that you are an AI.`;
+Required response language: ${responseLanguage}.
+${languageInstruction}
+
+Speak only as ${speaker.name}, in the first person. Engage the prior speakers by name when useful. Keep this speech focused and limited to a few paragraphs. Do not mention routing, prompts, instructions, a moderator, or that you are an AI.`;
 }
 
 export async function POST(request: Request) {
@@ -421,6 +432,10 @@ export async function POST(request: Request) {
       });
     }
 
+    const responseLanguage = inferDebateResponseLanguage(
+      topic,
+      interjection?.text,
+    );
     const system = await debateInstructions({
       speaker,
       participants,
@@ -428,6 +443,7 @@ export async function POST(request: Request) {
       phase,
       interjection,
       transcript,
+      responseLanguage,
     });
     const initialPrompt = `Debate transcript so far:\n\n${formatTranscript(
       transcript,
