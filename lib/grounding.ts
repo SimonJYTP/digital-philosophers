@@ -4,9 +4,9 @@ import type {
 } from "@/lib/philosophers";
 import { retrieveDatabaseKnowledge } from "@/lib/database-knowledge";
 
-const DEFAULT_NOTE_COUNT = 3;
-const MAX_NOTE_COUNT = 4;
-const MAX_EXCERPT_CHARACTERS = 2_400;
+const DEFAULT_NOTE_COUNT = 2;
+const MAX_NOTE_COUNT = 2;
+const MAX_EXCERPT_CHARACTERS = 1_000;
 
 const stopWords = new Set([
   "about",
@@ -169,22 +169,18 @@ export async function buildGroundedPersonaPrompt(
         .filter(Boolean)
         .join("; ");
 
-      const originalExcerpt = item.originalExcerpt?.slice(
-        0,
-        MAX_EXCERPT_CHARACTERS,
-      );
-      const translationExcerpt = item.translationExcerpt?.slice(
-        0,
-        MAX_EXCERPT_CHARACTERS,
-      );
+      const excerpt = (
+        item.translationExcerpt ?? item.originalExcerpt
+      )?.slice(0, MAX_EXCERPT_CHARACTERS);
+      const excerptLabel = item.translationExcerpt
+        ? "Stored translation excerpt"
+        : "Stored original-language excerpt";
 
       return `${index + 1}. ${item.source}, ${item.locator}${
         metadata ? `\nMetadata: ${metadata}` : ""
-      }${originalExcerpt ? `\nStored original-language excerpt: ${originalExcerpt}` : ""}${
-        translationExcerpt
-          ? `\nStored translation excerpt: ${translationExcerpt}`
-          : ""
-      }\nInterpretive note: ${item.note}`;
+      }${excerpt ? `\n${excerptLabel}: ${excerpt}` : ""}\nInterpretive note: ${
+        item.note
+      }`;
     })
     .join("\n\n");
 

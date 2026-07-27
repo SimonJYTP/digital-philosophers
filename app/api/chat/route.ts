@@ -1,18 +1,22 @@
-import { createOpenAI } from "@ai-sdk/openai";
 import {
   convertToModelMessages,
   streamText,
   type UIMessage,
 } from "ai";
 
+import {
+  createDeepSeekChatModel,
+  type DeepSeekResponseMode,
+} from "@/lib/deepseek";
 import { buildGroundedPersonaPrompt } from "@/lib/grounding";
 import { getPhilosopher } from "@/lib/philosophers";
 
-export const maxDuration = 30;
+export const maxDuration = 60;
 
 type ChatRequest = {
   messages?: UIMessage[];
   philosopherId?: string;
+  responseMode?: DeepSeekResponseMode;
 };
 
 function conversationQuery(messages: readonly UIMessage[]): string {
@@ -80,21 +84,25 @@ export async function POST(request: Request) {
     });
   }
 
-  const openai = createOpenAI({
-    apiKey,
-    ...(process.env.OPENAI_BASE_URL?.trim()
-      ? { baseURL: process.env.OPENAI_BASE_URL.trim() }
-      : {}),
-  });
+  if (
+    body.responseMode !== undefined &&
+    body.responseMode !== "standard" &&
+    body.responseMode !== "deep"
+  ) {
+    return new Response("Select a valid response mode.", { status: 400 });
+  }
+
+  const responseMode = body.responseMode ?? "standard";
 
   try {
     const result = streamText({
-      model: openai.chat(process.env.OPENAI_MODEL?.trim() || "deepseek-v4-pro"),
+      model: createDeepSeekChatModel(apiKey, responseMode),
       system: await buildGroundedPersonaPrompt(
         philosopher,
         conversationQuery(body.messages),
       ),
       messages: await convertToModelMessages(body.messages),
+      maxOutputTokens: responseMode === "deep" ? 1_500 : 800,
     });
 
     return result.toUIMessageStreamResponse({

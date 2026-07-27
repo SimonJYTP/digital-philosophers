@@ -1,4 +1,3 @@
-import { createOpenAI } from "@ai-sdk/openai";
 import { generateText, streamText } from "ai";
 
 import type {
@@ -17,6 +16,10 @@ import {
   type Philosopher,
 } from "@/lib/philosophers";
 import { buildGroundedPersonaPrompt } from "@/lib/grounding";
+import {
+  createDeepSeekChatModel,
+  type DeepSeekChatModel,
+} from "@/lib/deepseek";
 
 export const maxDuration = 120;
 
@@ -250,7 +253,7 @@ async function chooseNextSpeaker({
   interjection,
   abortSignal,
 }: {
-  model: ReturnType<ReturnType<typeof createOpenAI>["chat"]>;
+  model: DeepSeekChatModel;
   participants: readonly Philosopher[];
   topic: string;
   transcript: readonly DebateTranscriptEntry[];
@@ -394,15 +397,7 @@ export async function POST(request: Request) {
 
   const { participants, interjection } = validated;
   const { phase, topic, transcript, requestedSpeakerId } = validated.request;
-  const openai = createOpenAI({
-    apiKey,
-    ...(process.env.OPENAI_BASE_URL?.trim()
-      ? { baseURL: process.env.OPENAI_BASE_URL.trim() }
-      : {}),
-  });
-  const model = openai.chat(
-    process.env.OPENAI_MODEL?.trim() || "deepseek-v4-pro",
-  );
+  const model = createDeepSeekChatModel(apiKey);
 
   try {
     const speaker =

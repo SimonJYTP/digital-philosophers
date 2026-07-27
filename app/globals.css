@@ -709,9 +709,64 @@ textarea {
   background: rgba(244, 237, 221, 0.96);
 }
 
-.composer label {
-  display: block;
+.composer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 0.6rem;
+}
+
+.composer-toolbar label {
+  display: block;
+}
+
+.depth-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--rule);
+  color: var(--ink-soft);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.depth-toggle > span:first-child {
+  color: var(--oxblood);
+  font-size: 0.8rem;
+}
+
+.depth-toggle > span:last-child {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.depth-toggle strong {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.depth-toggle small {
+  font-size: 0.58rem;
+}
+
+.depth-toggle:hover:not(:disabled),
+.depth-toggle.is-active {
+  border-color: var(--oxblood);
+  color: var(--oxblood);
+  background: rgba(110, 29, 29, 0.06);
+}
+
+.depth-toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
 }
 
 .composer-field {

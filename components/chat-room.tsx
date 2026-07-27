@@ -37,14 +37,18 @@ export function ChatRoom({
   philosopher: PublicPhilosopher;
 }) {
   const [input, setInput] = useState("");
+  const [deepAnswer, setDeepAnswer] = useState(false);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
   const transport = useMemo(
     () =>
       new DefaultChatTransport({
         api: "/api/chat",
-        body: { philosopherId: philosopher.id },
+        body: {
+          philosopherId: philosopher.id,
+          responseMode: deepAnswer ? "deep" : "standard",
+        },
       }),
-    [philosopher.id],
+    [deepAnswer, philosopher.id],
   );
 
   const {
@@ -150,7 +154,11 @@ export function ChatRoom({
             <span />
             <span />
             <span />
-            <p>{philosopher.name} considers your question…</p>
+            <p>
+              {deepAnswer
+                ? `${philosopher.name} examines the sources in depth…`
+                : `${philosopher.name} considers your question…`}
+            </p>
           </div>
         ) : null}
 
@@ -176,7 +184,22 @@ export function ChatRoom({
       </div>
 
       <form className="composer" onSubmit={submitMessage}>
-        <label htmlFor="message">Your question</label>
+        <div className="composer-toolbar">
+          <label htmlFor="message">Your question</label>
+          <button
+            className={`depth-toggle${deepAnswer ? " is-active" : ""}`}
+            type="button"
+            aria-pressed={deepAnswer}
+            disabled={isBusy}
+            onClick={() => setDeepAnswer((active) => !active)}
+          >
+            <span aria-hidden="true">✦</span>
+            <span>
+              <strong>Deep answer</strong>
+              <small>{deepAnswer ? "Pro enabled" : "Use Pro reasoning"}</small>
+            </span>
+          </button>
+        </div>
         <div className="composer-field">
           <textarea
             id="message"
@@ -198,7 +221,10 @@ export function ChatRoom({
           </button>
         </div>
         <p className="composer-note">
-          Enter to send · Shift + Enter for a new line · Grounded AI interpretation
+          Enter to send · Shift + Enter for a new line ·{" "}
+          {deepAnswer
+            ? "Pro · deeper reasoning may take longer"
+            : "Flash · faster grounded response"}
         </p>
       </form>
     </section>

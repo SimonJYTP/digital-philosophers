@@ -36,12 +36,13 @@ interpretation. The notes are never sent to the browser.
    ```dotenv
    OPENAI_API_KEY=your_deepseek_key_here
    OPENAI_BASE_URL=https://api.deepseek.com
-   OPENAI_MODEL=deepseek-v4-pro
+   OPENAI_FLASH_MODEL=deepseek-v4-flash
+   OPENAI_PRO_MODEL=deepseek-v4-pro
    ```
 
    The application uses DeepSeek's OpenAI-compatible Chat Completions endpoint.
-   Keep the variable names above because the server uses the Vercel AI SDK's
-   OpenAI-compatible provider.
+   Flash is used by default for faster replies. The chat's **Deep answer**
+   control uses Pro with deep reasoning only when requested.
 
 4. Start the development server:
 
