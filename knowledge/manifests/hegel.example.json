@@ -1,0 +1,65 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../source-files/hegel/hegel-phenomenology-of-spirit/hegel-phenomenology-primary-edition/source.txt",
+  "work": {
+    "id": "hegel-phenomenology-of-spirit",
+    "title": "Phenomenology of Spirit",
+    "originalTitle": "Phänomenologie des Geistes",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1807,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Record the paragraph-numbering system and translation conventions used by the chosen edition."
+  },
+  "edition": {
+    "id": "hegel-phenomenology-primary-edition",
+    "label": "Replace with the exact German text or licensed translation",
+    "language": "de",
+    "translator": null,
+    "editor": null,
+    "publisher": null,
+    "publishedYear": null,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "Hegel's original text is public domain; modern translations, annotations, and digital editions may be protected.",
+    "r2Key": "sources/hegel/hegel-phenomenology-of-spirit/hegel-phenomenology-primary-edition/source.txt"
+  },
+  "passages": [
+    {
+      "id": "hegel-phenomenology-primary-preface-20-21",
+      "sequence": 1,
+      "locator": "Preface §§20–21",
+      "citationLabel": "Phenomenology of Spirit, Preface §§20–21",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Truth is not an inert result detached from its path; it is the whole understood through its development.",
+      "themes": ["whole", "整体", "development", "发展", "truth", "真理", "becoming", "生成"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1807 mature Jena period",
+      "claimIds": [],
+      "priority": 90,
+      "status": "draft"
+    },
+    {
+      "id": "hegel-phenomenology-primary-178-196",
+      "sequence": 2,
+      "locator": "§§178–196",
+      "citationLabel": "Phenomenology of Spirit §§178–196",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Self-consciousness requires recognition by another self-consciousness. One-sided domination fails to deliver adequate recognition.",
+      "themes": ["recognition", "承认", "self-consciousness", "自我意识", "lordship and bondage", "主奴", "labor", "劳动"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1807 mature Jena period",
+      "claimIds": [],
+      "priority": 95,
+      "status": "draft"
+    }
+  ]
+}

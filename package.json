@@ -9,6 +9,7 @@
     "build:sites": "vinext build",
     "db:generate": "drizzle-kit generate",
     "db:migrate:local": "node scripts/wrangler-local.mjs d1 migrations apply living-archive-local --local",
+    "knowledge:scaffold": "node scripts/knowledge-scaffold.mjs",
     "knowledge:prepare": "node scripts/knowledge-import.mjs",
     "knowledge:import:local": "node scripts/knowledge-import.mjs --local",
     "start": "next start",

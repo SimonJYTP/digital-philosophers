@@ -19,7 +19,7 @@
 ```text
 knowledge/
   source-files/
-    immanuel-kant/
+    <philosopher-id>/
       <work-id>/
         <edition-id>/
           source.pdf
@@ -30,6 +30,14 @@ knowledge/
 ```text
 knowledge/source-files/immanuel-kant/kant-groundwork/zhang-edition/source.pdf
 ```
+
+当前哲学家 ID 为：
+
+- `confucius`
+- `socrates`
+- `immanuel-kant`
+- `hegel`
+- `friedrich-nietzsche`
 
 `knowledge/source-files/` 已加入 `.gitignore`。这里是本地暂存区，不能把受版权保护的现代译本提交进 Git。
 
@@ -115,21 +123,35 @@ npm run dev:sites
 
 ## 准备一本书
 
-1. 将原始文件放入 `knowledge/source-files/<philosopher-id>/...`。
-2. 复制 `knowledge/manifests/immanuel-kant.example.json`。
-3. 将副本命名为 `.local.json`，例如：
+项目已经为五位哲学家建立示例清单。一次生成全部本地工作清单和原著目录：
+
+```powershell
+npm run knowledge:scaffold -- --all
+```
+
+该命令不会覆盖已经存在的 `.local.json`。也可以只初始化一位：
+
+```powershell
+npm run knowledge:scaffold -- knowledge/manifests/confucius.example.json
+```
+
+随后：
+
+1. 查看命令输出的 `sourceFile`，将相应原著放到该位置。
+2. 编辑对应的 `.local.json`，例如：
 
    ```text
-   knowledge/manifests/kant-groundwork.local.json
+   knowledge/manifests/confucius.local.json
    ```
 
-4. 填写真实书目信息、版权状态和 `sourceFile`。
-5. 为每个审核后的段落填写 locator、原文、译文、解释性摘要和主题词。
+3. 填写真实书目信息、版权状态和 `sourceFile`。
+4. 为每个审核后的段落填写 locator、原文、译文、解释性摘要和主题词。
+5. 所有示例片段默认为 `draft`；完成人工复核后，再将相应片段改成 `active`。
 
 只生成待审核 SQL 和导入回执：
 
 ```powershell
-npm run knowledge:prepare -- knowledge/manifests/kant-groundwork.local.json
+npm run knowledge:prepare -- knowledge/manifests/confucius.local.json
 ```
 
 输出位于 `knowledge/generated/`，该目录不会提交进 Git。
@@ -137,10 +159,12 @@ npm run knowledge:prepare -- knowledge/manifests/kant-groundwork.local.json
 完成本地 R2 与 D1 导入：
 
 ```powershell
-npm run knowledge:import:local -- knowledge/manifests/kant-groundwork.local.json
+npm run knowledge:import:local -- knowledge/manifests/confucius.local.json
 ```
 
 导入使用幂等 upsert；相同 ID 可重复执行以更新内容。
+
+完整的分阶段扩充顺序见 `knowledge/CORPUS_PLAN.md`。
 
 ## 生产环境导入
 

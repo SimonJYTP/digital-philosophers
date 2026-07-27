@@ -32,8 +32,8 @@
       "sequence": 1,
       "locator": "Ak 4:421",
       "citationLabel": "Groundwork, Ak 4:421",
-      "originalText": "Paste the exact original-language excerpt here when licensed or public domain.",
-      "translationText": "在版权允许时，在这里粘贴经过核对的译文片段。",
+      "originalText": null,
+      "translationText": null,
       "interpretiveNote": "Test the maxim of an action by asking whether one can at the same time will that it become a universal law.",
       "themes": [
         "categorical imperative",
@@ -52,7 +52,7 @@
         "CLM-0028"
       ],
       "priority": 90,
-      "status": "active"
+      "status": "draft"
     }
   ]
 }

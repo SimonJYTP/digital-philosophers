@@ -31,4 +31,4 @@ __pycache__/
 /knowledge/source-files/**
 !/knowledge/source-files/.gitkeep
 /knowledge/generated/
-/knowledge/manifests/*.local.json
+/knowledge/manifests/**/*.local.json

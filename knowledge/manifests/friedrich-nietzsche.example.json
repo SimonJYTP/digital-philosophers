@@ -1,0 +1,65 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../source-files/friedrich-nietzsche/nietzsche-genealogy-of-morality/nietzsche-genealogy-primary-edition/source.txt",
+  "work": {
+    "id": "nietzsche-genealogy-of-morality",
+    "title": "On the Genealogy of Morality",
+    "originalTitle": "Zur Genealogie der Moral",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1887,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Record the essay and section numbering of the selected edition and preserve Nietzsche's distinctions rather than reducing them to slogans."
+  },
+  "edition": {
+    "id": "nietzsche-genealogy-primary-edition",
+    "label": "Replace with the exact German text or licensed translation",
+    "language": "de",
+    "translator": null,
+    "editor": null,
+    "publisher": null,
+    "publishedYear": null,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "Nietzsche's original text is public domain; modern translations, annotations, and digital editions may be protected.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-genealogy-of-morality/nietzsche-genealogy-primary-edition/source.txt"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-genealogy-primary-preface-3-6",
+      "sequence": 1,
+      "locator": "Preface §§3–6",
+      "citationLabel": "On the Genealogy of Morality, Preface §§3–6",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Moral values have histories and must themselves be evaluated by asking what conditions produced them and whether they enhance or diminish life.",
+      "themes": ["genealogy", "谱系", "morality", "道德", "value", "价值", "history", "历史"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1887 late lucid philosophy",
+      "claimIds": [],
+      "priority": 95,
+      "status": "draft"
+    },
+    {
+      "id": "nietzsche-genealogy-primary-first-essay-10-11",
+      "sequence": 2,
+      "locator": "First Essay §§10–11",
+      "citationLabel": "On the Genealogy of Morality, First Essay §§10–11",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Slave morality's opposition of evil and good grows reactively from ressentiment and reverses an earlier noble valuation.",
+      "themes": ["ressentiment", "怨恨", "slave morality", "奴隶道德", "good and evil", "善恶", "value creation", "价值创造"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1887 late lucid philosophy",
+      "claimIds": [],
+      "priority": 90,
+      "status": "draft"
+    }
+  ]
+}

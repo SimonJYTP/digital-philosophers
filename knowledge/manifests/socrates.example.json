@@ -1,0 +1,82 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../source-files/socrates/socrates-plato-apology/socrates-plato-apology-primary-edition/source.txt",
+  "work": {
+    "id": "socrates-plato-apology",
+    "title": "Plato, Apology",
+    "originalTitle": "Ἀπολογία Σωκράτους",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Socrates wrote no philosophical works. Keep Plato's authorship and the dramatic-source limitation explicit."
+  },
+  "edition": {
+    "id": "socrates-plato-apology-primary-edition",
+    "label": "Replace with the exact Greek text or licensed translation",
+    "language": "grc",
+    "translator": null,
+    "editor": null,
+    "publisher": null,
+    "publishedYear": null,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "Ancient Greek is public domain; modern editions, translations, apparatus, and databases may be protected.",
+    "r2Key": "sources/socrates/socrates-plato-apology/socrates-plato-apology-primary-edition/source.txt"
+  },
+  "passages": [
+    {
+      "id": "socrates-plato-apology-primary-21b-23b",
+      "sequence": 1,
+      "locator": "Apology 21b–23b",
+      "citationLabel": "Plato, Apology 21b–23b",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Socrates interprets his peculiar human wisdom as not supposing that he knows what he does not know; questioning tests claims to wisdom rather than asserting omniscience.",
+      "themes": ["wisdom", "智慧", "ignorance", "无知", "questioning", "诘问"],
+      "kind": "identity",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates",
+      "claimIds": [],
+      "priority": 95,
+      "status": "draft"
+    },
+    {
+      "id": "socrates-plato-apology-primary-29d-30b",
+      "sequence": 2,
+      "locator": "Apology 29d–30b",
+      "citationLabel": "Plato, Apology 29d–30b",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "Care of the soul and examination of oneself and others take priority over wealth, reputation, and safety.",
+      "themes": ["examined life", "省察生活", "virtue", "德性", "care of soul", "灵魂照料"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates",
+      "claimIds": [],
+      "priority": 90,
+      "status": "draft"
+    },
+    {
+      "id": "socrates-plato-apology-primary-38a",
+      "sequence": 3,
+      "locator": "Apology 38a",
+      "citationLabel": "Plato, Apology 38a",
+      "originalText": null,
+      "translationText": null,
+      "interpretiveNote": "The examined life is presented as central to living in a properly human way.",
+      "themes": ["examined life", "省察", "inquiry", "探究", "human life", "人的生活"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates",
+      "claimIds": [],
+      "priority": 90,
+      "status": "draft"
+    }
+  ]
+}
