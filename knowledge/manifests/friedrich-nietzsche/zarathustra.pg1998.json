@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-zarathustra/nietzsche-zarathustra-common-pg1998/source.epub",
+  "work": {
+    "id": "nietzsche-zarathustra",
+    "title": "Thus Spake Zarathustra",
+    "originalTitle": "Also sprach Zarathustra",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1883,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Nietzsche's philosophical-literary work, first issued in parts from 1883 to 1885. Preserve its dramatic voices, imagery, and irony rather than treating every speech as a flat doctrinal statement."
+  },
+  "edition": {
+    "id": "nietzsche-zarathustra-common-pg1998",
+    "label": "Thomas Common translation; Project Gutenberg #1998",
+    "language": "en",
+    "translator": "Thomas Common",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 1999,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1998",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-zarathustra/nietzsche-zarathustra-common-pg1998/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-zarathustra-common-three-metamorphoses",
+      "sequence": 1,
+      "locator": "Part I, The Three Metamorphoses; OEBPS/78992763413364976_1998-h-6.htm.xhtml",
+      "citationLabel": "Thus Spake Zarathustra, Part I, “The Three Metamorphoses,” Common trans.",
+      "originalText": null,
+      "translationText": "Three metamorphoses of the spirit do I designate to you: how the spirit becometh a camel, the camel a lion, and the lion at last a child.",
+      "interpretiveNote": "The camel, lion, and child form a staged image of bearing inherited burdens, winning freedom from imposed values, and attaining an affirmative capacity to create. It is a literary-philosophical image, not a literal psychology taxonomy.",
+      "themes": ["self-overcoming", "自我超克", "metamorphosis", "变形", "value creation", "价值创造", "affirmation", "肯定"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1883–1885 mature literary philosophy; historical English translation",
+      "claimIds": [],
+      "priority": 96,
+      "status": "active"
+    }
+  ]
+}

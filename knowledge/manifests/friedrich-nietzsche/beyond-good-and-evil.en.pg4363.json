@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-beyond-good-and-evil/nietzsche-bge-zimmern-pg4363/source.epub",
+  "work": {
+    "id": "nietzsche-beyond-good-and-evil",
+    "title": "Beyond Good and Evil",
+    "originalTitle": "Jenseits von Gut und Böse",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1886,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Nietzsche's 1886 critique of philosophical dogmatism and inherited moral assumptions. Preserve section numbering and the interrogative, experimental style."
+  },
+  "edition": {
+    "id": "nietzsche-bge-zimmern-pg4363",
+    "label": "Helen Zimmern translation, Complete Works 1909–1913; Project Gutenberg #4363",
+    "language": "en",
+    "translator": "Helen Zimmern",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2003,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/4363",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-beyond-good-and-evil/nietzsche-bge-zimmern-pg4363/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-bge-zimmern-section-1",
+      "sequence": 1,
+      "locator": "§1; OEBPS/8038780113730098101_4363-h-0.htm.xhtml",
+      "citationLabel": "Beyond Good and Evil §1, Zimmern trans.",
+      "originalText": null,
+      "translationText": "The Will to Truth, which is to tempt us to many a hazardous enterprise, the famous Truthfulness of which all philosophers have hitherto spoken with respect, what questions has this Will to Truth not laid before us! What strange, perplexing, questionable questions! It is already a long story; yet it seems as if it were hardly commenced. Is it any wonder if we at last grow distrustful, lose patience, and turn impatiently away? That this Sphinx teaches us at last to ask questions ourselves? WHO is it really that puts questions to us here? WHAT really is this \"Will to Truth\" in us? In fact we made a long halt at the question as to the origin of this Will—until at last we came to an absolute standstill before a yet more fundamental question. We inquired about the VALUE of this Will. Granted that we want the truth: WHY NOT RATHER untruth? And uncertainty? Even ignorance?",
+      "interpretiveNote": "The passage shifts inquiry from the origin of truth-seeking to the value of truth-seeking. It is a challenge to examine an inherited commitment, not a blanket denial that truth matters.",
+      "themes": ["will to truth", "求真意志", "value of truth", "真理的价值", "perspectivism", "视角主义", "critique", "批判"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1886 late lucid philosophy; historical English translation",
+      "claimIds": [],
+      "priority": 98,
+      "status": "active"
+    }
+  ]
+}

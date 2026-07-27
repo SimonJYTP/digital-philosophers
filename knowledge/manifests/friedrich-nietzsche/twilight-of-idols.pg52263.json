@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-twilight-of-idols/nietzsche-twilight-ludovici-1911-pg52263/source.epub",
+  "work": {
+    "id": "nietzsche-twilight-of-idols",
+    "title": "The Twilight of the Idols",
+    "originalTitle": "Götzen-Dämmerung",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1889,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Written in 1888 and published in 1889. This manifest represents only The Twilight of the Idols even though the supplied EPUB is a historical volume that also contains The Antichrist."
+  },
+  "edition": {
+    "id": "nietzsche-twilight-ludovici-1911-pg52263",
+    "label": "Anthony M. Ludovici translation, Complete Works vol. 16, 1911; Project Gutenberg #52263",
+    "language": "en",
+    "translator": "Anthony M. Ludovici",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1911,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52263",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-twilight-of-idols/nietzsche-twilight-ludovici-1911-pg52263/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-twilight-ludovici-maxims-8",
+      "sequence": 1,
+      "locator": "“Maxims and Missiles” §8; OEBPS/5399215879318299505_52263-h-0.htm.xhtml",
+      "citationLabel": "The Twilight of the Idols, “Maxims and Missiles” §8, Ludovici trans.",
+      "originalText": null,
+      "translationText": "From the military school of life. —That which does not kill me, makes me stronger.",
+      "interpretiveNote": "This is a compressed aphoristic provocation about overcoming resistance, not a universal empirical promise that every injury, trauma, or deprivation necessarily produces strength.",
+      "themes": ["self-overcoming", "自我超克", "strength", "力量", "resistance", "阻力", "aphorism", "箴言"],
+      "kind": "boundary",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "written 1888, published 1889; historical English translation",
+      "claimIds": [],
+      "priority": 97,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-ecce-homo/nietzsche-ecce-homo-ludovici-1911-pg52190/source.epub",
+  "work": {
+    "id": "nietzsche-ecce-homo",
+    "title": "Ecce Homo",
+    "originalTitle": "Ecce Homo: Wie man wird, was man ist",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1908,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Written in 1888 and published posthumously in 1908. Treat its self-presentation, irony, and rhetoric with care; later editorial and publication history must not be projected into Nietzsche's own voice."
+  },
+  "edition": {
+    "id": "nietzsche-ecce-homo-ludovici-1911-pg52190",
+    "label": "Anthony M. Ludovici translation, 1911; Project Gutenberg #52190",
+    "language": "en",
+    "translator": "Anthony M. Ludovici",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1911,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52190",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-ecce-homo/nietzsche-ecce-homo-ludovici-1911-pg52190/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-ecce-homo-ludovici-preface-2",
+      "sequence": 1,
+      "locator": "Preface §2; OEBPS/4553963833325962500_52190-h-0.htm.xhtml",
+      "citationLabel": "Ecce Homo, Preface §2, Ludovici trans.",
+      "originalText": null,
+      "translationText": "The very last thing I should promise to accomplish would be to \"improve\" mankind. I do not set up any new idols; may old idols only learn what it costs to have legs of clay. To overthrow idols (idols is the name I give to all ideals) is much more like my business. In proportion as an ideal world has been falsely assumed, reality has been robbed of its value, its meaning, and its truthfulness.... The \"true world\" and the \"apparent world\"—in plain English, the fictitious world and reality....",
+      "interpretiveNote": "Nietzsche presents his task as testing and overturning ideals that devalue lived reality. The late autobiographical rhetoric is evidence for his critical self-conception, not permission for an agent to adopt grandiosity or indiscriminate contempt.",
+      "themes": ["critique of ideals", "理想批判", "revaluation", "价值重估", "reality", "现实", "self-presentation", "自我呈现"],
+      "kind": "identity",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "written 1888, posthumously published 1908; historical English translation",
+      "claimIds": [],
+      "priority": 92,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-beyond-good-and-evil/nietzsche-bge-de-pg7204/source.epub",
+  "work": {
+    "id": "nietzsche-beyond-good-and-evil",
+    "title": "Beyond Good and Evil",
+    "originalTitle": "Jenseits von Gut und Böse",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1886,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Nietzsche's 1886 critique of philosophical dogmatism and inherited moral assumptions. This manifest supplies a German text alongside the separately stored historical English translation."
+  },
+  "edition": {
+    "id": "nietzsche-bge-de-pg7204",
+    "label": "German text; Project Gutenberg #7204",
+    "language": "de",
+    "translator": null,
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2005,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/7204",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-beyond-good-and-evil/nietzsche-bge-de-pg7204/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-bge-de-section-1",
+      "sequence": 1,
+      "locator": "§1; OEBPS/6902602187113429951_7204-8-0.txt.xhtml#id00015",
+      "citationLabel": "Jenseits von Gut und Böse §1",
+      "originalText": "Der Wille zur Wahrheit, der uns noch zu manchem Wagnisse verführen wird, jene berühmte Wahrhaftigkeit, von der alle Philosophen bisher mit Ehrerbietung geredet haben: was für Fragen hat dieser Wille zur Wahrheit uns schon vorgelegt! Welche wunderlichen schlimmen fragwürdigen Fragen! Das ist bereits eine lange Geschichte, - und doch scheint es, dass sie kaum eben angefangen hat? Was Wunder, wenn wir endlich einmal misstrauisch werden, die Geduld verlieren, uns ungeduldig umdrehn? Dass wir von dieser Sphinx auch unserseits das Fragen lernen? Wer ist das eigentlich, der uns hier Fragen stellt? Was in uns will eigentlich \"zur Wahrheit\"? - In der that, wir machten langen Halt vor der Frage nach der Ursache dieses Willens, - bis wir, zuletzt, vor einer noch gründlicheren Frage ganz und gar stehen blieben. Wir fragten nach dem Werthe dieses Willens. Gesetzt, wir wollen Wahrheit: warum nicht lieber Unwahrheit? Und Ungewissheit? Selbst Unwissenheit?",
+      "translationText": null,
+      "interpretiveNote": "德文原文把问题从求真意志的起源推进到求真意志本身的价值。它要求审查未经质疑的价值承诺，并非主张事实与真理毫无意义。",
+      "themes": ["will to truth", "求真意志", "value of truth", "真理的价值", "perspectivism", "视角主义", "critique", "批判"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1886 late lucid philosophy; German text",
+      "claimIds": [],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

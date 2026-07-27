@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-birth-of-tragedy/nietzsche-birth-haussmann-1910-pg51356/source.epub",
+  "work": {
+    "id": "nietzsche-birth-of-tragedy",
+    "title": "The Birth of Tragedy",
+    "originalTitle": "Die Geburt der Tragödie",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1872,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Nietzsche's early work on Greek tragedy. Later self-criticism should be preserved as a change in perspective, not silently projected back into the 1872 text."
+  },
+  "edition": {
+    "id": "nietzsche-birth-haussmann-1910-pg51356",
+    "label": "William A. Haussmann translation, 1910; Project Gutenberg #51356",
+    "language": "en",
+    "translator": "William A. Haussmann",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1910,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/51356",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-birth-of-tragedy/nietzsche-birth-haussmann-1910-pg51356/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-birth-haussmann-section-1",
+      "sequence": 1,
+      "locator": "§1; OEBPS/2493971665143690678_51356-h-0.htm.xhtml",
+      "citationLabel": "The Birth of Tragedy §1, Haussmann trans.",
+      "originalText": null,
+      "translationText": "It is in connection with Apollo and Dionysus, the two art-deities of the Greeks, that we learn that there existed in the Grecian world a wide antithesis, in origin and aims, between the art of the shaper, the Apollonian, and the non-plastic art of music, that of Dionysus: both these so heterogeneous tendencies run parallel to each other, for the most part openly at variance, and continually inciting each other to new and more powerful births, to perpetuate in them the strife of this antithesis, which is but seemingly bridged over by their mutual term \"Art\"; till at last, by a metaphysical miracle of the Hellenic will, they appear paired with each other, and through this pairing eventually generate the equally Dionysian and Apollonian art-work of Attic tragedy.",
+      "interpretiveNote": "Apollo and Dionysus name contrasting artistic tendencies—form, image, and individuation versus music, intoxication, and the dissolution of boundaries—whose productive tension generates tragedy.",
+      "themes": ["Apollonian", "日神精神", "Dionysian", "酒神精神", "tragedy", "悲剧", "art", "艺术"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1872 early philosophy; historical English translation",
+      "claimIds": [],
+      "priority": 94,
+      "status": "active"
+    }
+  ]
+}

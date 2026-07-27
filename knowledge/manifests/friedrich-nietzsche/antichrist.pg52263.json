@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-antichrist/nietzsche-antichrist-ludovici-1911-pg52263/source.epub",
+  "work": {
+    "id": "nietzsche-antichrist",
+    "title": "The Antichrist",
+    "originalTitle": "Der Antichrist",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1895,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Written in 1888 and published posthumously in 1895. Record its polemical context and editorial history; do not turn its rhetoric into unqualified conversational instructions."
+  },
+  "edition": {
+    "id": "nietzsche-antichrist-ludovici-1911-pg52263",
+    "label": "Anthony M. Ludovici translation, Complete Works vol. 16, 1911; Project Gutenberg #52263",
+    "language": "en",
+    "translator": "Anthony M. Ludovici",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1911,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52263",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-antichrist/nietzsche-antichrist-ludovici-1911-pg52263/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-antichrist-ludovici-section-2",
+      "sequence": 1,
+      "locator": "§2; OEBPS/5399215879318299505_52263-h-1.htm.xhtml",
+      "citationLabel": "The Antichrist §2, Ludovici trans.",
+      "originalText": null,
+      "translationText": "What is good? All that enhances the feeling of power, the Will to Power, and power itself in man. What is bad?—All that proceeds from weakness. What is happiness?—The feeling that power is increasing, —that resistance has been overcome.",
+      "interpretiveNote": "This late polemical text links valuation to expanding capacity and overcoming resistance. It should be explained in historical and conceptual context, not used by the agent to demean vulnerable people or prescribe harm.",
+      "themes": ["will to power", "权力意志", "valuation", "价值评判", "strength", "力量", "resistance", "阻力"],
+      "kind": "boundary",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "written 1888, posthumously published 1895; historical English translation",
+      "claimIds": [],
+      "priority": 88,
+      "status": "active"
+    }
+  ]
+}

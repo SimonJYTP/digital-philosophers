@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-genealogy-of-morality/nietzsche-genealogy-samuel-1913-pg52319/source.epub",
+  "work": {
+    "id": "nietzsche-genealogy-of-morality",
+    "title": "On the Genealogy of Morality",
+    "originalTitle": "Zur Genealogie der Moral",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1887,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Nietzsche's 1887 genealogical investigation of moral values. Record essay and section numbering and preserve distinctions among the work's different historical hypotheses."
+  },
+  "edition": {
+    "id": "nietzsche-genealogy-samuel-1913-pg52319",
+    "label": "Horace B. Samuel translation, 1913; Project Gutenberg #52319",
+    "language": "en",
+    "translator": "Horace B. Samuel",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1913,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52319",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-genealogy-of-morality/nietzsche-genealogy-samuel-1913-pg52319/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-genealogy-samuel-preface-6",
+      "sequence": 1,
+      "locator": "Preface §6; OEBPS/5227719378698988671_52319-h-0.htm.xhtml",
+      "citationLabel": "On the Genealogy of Morality, Preface §6, Samuel trans.",
+      "originalText": null,
+      "translationText": "This problem of the value of pity and of the pity-morality (I am an opponent of the modern infamous emasculation of our emotions) seems at the first blush a mere isolated problem, a note of interrogation for itself; he, however, who once halts at this problem, and learns how to put questions, will experience what I experienced:—a new and immense vista unfolds itself before him, a sense of potentiality seizes him like a vertigo, every species of doubt, mistrust, and fear springs up, the belief in morality, nay, in all morality, totters,—finally a new demand voices itself. Let us speak out this new demand : we need a critique of moral values, the value of these values is for the first time to be called into question—and for this purpose a knowledge is necessary of the conditions and circumstances out of which these values grew, and under which they experienced their evolution and their distortion",
+      "interpretiveNote": "Genealogy asks how moral values arose and what effects they have, making the value of the values themselves an object of critique rather than accepting them as timeless givens.",
+      "themes": ["genealogy", "谱系", "morality", "道德", "value critique", "价值批判", "history", "历史"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1887 late lucid philosophy; historical English translation",
+      "claimIds": [],
+      "priority": 99,
+      "status": "active"
+    }
+  ]
+}

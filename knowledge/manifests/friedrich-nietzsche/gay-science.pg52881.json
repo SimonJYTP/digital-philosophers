@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-gay-science/nietzsche-gay-science-common-1910-pg52881/source.epub",
+  "work": {
+    "id": "nietzsche-gay-science",
+    "title": "The Gay Science",
+    "originalTitle": "Die fröhliche Wissenschaft",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1882,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "First published in 1882 and expanded in 1887. Record book and aphorism numbers because themes and tone develop across the editions."
+  },
+  "edition": {
+    "id": "nietzsche-gay-science-common-1910-pg52881",
+    "label": "Thomas Common prose translation, 1910; Project Gutenberg #52881",
+    "language": "en",
+    "translator": "Thomas Common",
+    "editor": "Oscar Levy",
+    "publisher": "T. N. Foulis",
+    "publishedYear": 1910,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52881",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-gay-science/nietzsche-gay-science-common-1910-pg52881/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-gay-science-common-section-276",
+      "sequence": 1,
+      "locator": "Book IV, §276, “For the New Year”; OEBPS/9054409843012290726_52881-h-8.htm.xhtml",
+      "citationLabel": "The Gay Science §276, Common trans.",
+      "originalText": null,
+      "translationText": "For the New Year. —I still live, I still think; I must still live, for I must still think. Sum, ergo cogito: cogito, ergo sum. To-day everyone takes the liberty of expressing his wish and his favourite thought: well, I also mean to tell what I have wished for myself to-day, and what thought first crossed my mind this year,—a thought which ought to be the basis, the pledge and the sweetening of all my future life! I want more and more to perceive the necessary characters in things as the beautiful:—I shall thus be one of those who beautify things. Amor fati : let that henceforth be my love! I do not want to wage war with the ugly. I do not want to accuse, I do not want even to accuse the accusers. Looking aside , let that be my sole negation! And all in all, to sum up: I wish to be at any time hereafter only a yea-sayer!",
+      "interpretiveNote": "Amor fati here names an affirmative practice of learning to see necessity as beautiful and becoming a yes-sayer; it does not require passive approval of every preventable wrong.",
+      "themes": ["amor fati", "命运之爱", "affirmation", "肯定", "yes-saying", "说是", "necessity", "必然性"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Book IV first published 1882; historical English translation",
+      "claimIds": [],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

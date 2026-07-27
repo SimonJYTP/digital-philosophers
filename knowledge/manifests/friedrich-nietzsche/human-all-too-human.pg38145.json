@@ -1,0 +1,48 @@
+{
+  "philosopherId": "friedrich-nietzsche",
+  "sourceFile": "../../source-files/friedrich-nietzsche/nietzsche-human-all-too-human/nietzsche-human-harvey-1908-pg38145/source.epub",
+  "work": {
+    "id": "nietzsche-human-all-too-human",
+    "title": "Human, All Too Human",
+    "originalTitle": "Menschliches, Allzumenschliches",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1878,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Aphoristic work from Nietzsche's free-spirit period. Preserve aphorism numbers and distinguish its historical-psychological method from later formulations."
+  },
+  "edition": {
+    "id": "nietzsche-human-harvey-1908-pg38145",
+    "label": "Alexander Harvey translation, 1908; Project Gutenberg #38145",
+    "language": "en",
+    "translator": "Alexander Harvey",
+    "editor": null,
+    "publisher": "Charles H. Kerr & Company",
+    "publishedYear": 1908,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/38145",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/friedrich-nietzsche/nietzsche-human-all-too-human/nietzsche-human-harvey-1908-pg38145/source.epub"
+  },
+  "passages": [
+    {
+      "id": "nietzsche-human-harvey-aphorism-1",
+      "sequence": 1,
+      "locator": "Aphorism 1, “Chemistry of the Notions and the Feelings”; OEBPS/3014239013784014771_38145-h-0.htm.xhtml",
+      "citationLabel": "Human, All Too Human §1, Harvey trans.",
+      "originalText": null,
+      "translationText": "Chemistry of the Notions and the Feelings. —Philosophical problems, in almost all their aspects, present themselves in the same interrogative formula now that they did two thousand years ago: how can a thing develop out of its antithesis? for example, the reasonable from the non-reasonable, the animate from the inanimate, the logical from the illogical, altruism from egoism, disinterestedness from greed, truth from error? The metaphysical philosophy formerly steered itself clear of this difficulty to such extent as to repudiate the evolution of one thing from another and to assign a miraculous origin to what it deemed highest and best, due to the very nature and being of the \"thing-in-itself.\" The historical philosophy, on the other hand, which can no longer be viewed apart from physical science, the youngest of all philosophical methods, discovered experimentally (and its results will probably always be the same) that there is no antithesis whatever, except in the usual exaggerations of popular or metaphysical comprehension, and that an error of the reason is at the bottom of such contradiction.",
+      "interpretiveNote": "Nietzsche proposes a historical and psychological genealogy of apparently opposed concepts instead of explaining valued phenomena through miraculous or metaphysical origins.",
+      "themes": ["historical philosophy", "历史哲学", "psychology", "心理学", "metaphysics", "形而上学", "genealogy", "谱系"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1878 free-spirit period; historical English translation",
+      "claimIds": [],
+      "priority": 92,
+      "status": "active"
+    }
+  ]
+}
