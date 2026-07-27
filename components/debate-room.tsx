@@ -14,6 +14,10 @@ import type {
   DebateSpeechPhase,
   DebateTranscriptEntry,
 } from "@/lib/debate";
+import {
+  DEBATE_SPEECH_COMPLETE_MARKER,
+  endsWithCompleteSentence,
+} from "@/lib/debate";
 
 export type PublicDebatePhilosopher = Readonly<{
   id: string;
@@ -197,19 +201,22 @@ export function DebateRoom({
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
-      let text = "";
+      let receivedText = "";
 
       try {
         while (true) {
           const { done, value } = await reader.read();
 
           if (done) {
-            text += decoder.decode();
+            receivedText += decoder.decode();
             break;
           }
 
-          text += decoder.decode(value, { stream: true });
-          updateTranscriptEntry(streamedMessageId, text);
+          receivedText += decoder.decode(value, { stream: true });
+          updateTranscriptEntry(
+            streamedMessageId,
+            receivedText.replaceAll(DEBATE_SPEECH_COMPLETE_MARKER, ""),
+          );
         }
       } catch {
         throw new Error(
@@ -217,8 +224,25 @@ export function DebateRoom({
         );
       }
 
+      if (!receivedText.endsWith(DEBATE_SPEECH_COMPLETE_MARKER)) {
+        throw new Error(
+          "The philosopher's reply ended before its final sentence was complete. Please retry.",
+        );
+      }
+
+      const text = receivedText.slice(
+        0,
+        -DEBATE_SPEECH_COMPLETE_MARKER.length,
+      );
+
       if (!text.trim()) {
         throw new Error("The philosopher returned an empty reply. Please retry.");
+      }
+
+      if (!endsWithCompleteSentence(text)) {
+        throw new Error(
+          "The philosopher's reply ended before its final sentence was complete. Please retry.",
+        );
       }
 
       updateTranscriptEntry(streamedMessageId, text);

@@ -7,6 +7,11 @@ import type {
   DebateTranscriptEntry,
 } from "@/lib/debate";
 import {
+  completeSentencePrefixLength,
+  DEBATE_SPEECH_COMPLETE_MARKER,
+  endsWithCompleteSentence,
+} from "@/lib/debate";
+import {
   getPhilosopher,
   philosophers,
   type Philosopher,
@@ -18,18 +23,8 @@ export const maxDuration = 120;
 const MAX_TRANSCRIPT_ENTRIES = 120;
 const MAX_ENTRY_LENGTH = 8_000;
 const MAX_TOPIC_LENGTH = 1_000;
-const MAX_SPEECH_SEGMENTS = 3;
 const INITIAL_SPEECH_TOKEN_LIMIT = 900;
-const CONTINUATION_TOKEN_LIMIT = 520;
-
-function speechLooksComplete(text: string): boolean {
-  const normalized = text
-    .trim()
-    .replace(/[*_`]+$/g, "")
-    .trim();
-
-  return /[.!?。！？…]["'”’）)\]}]*$/.test(normalized);
-}
+const FINAL_SENTENCE_TOKEN_LIMIT = 220;
 
 function readableProviderError(error: unknown): string {
   const message = error instanceof Error ? error.message.toLowerCase() : "";
@@ -442,65 +437,123 @@ export async function POST(request: Request) {
     const initialPrompt = `Debate transcript so far:\n\n${formatTranscript(
       transcript,
       participants,
-    )}\n\nNow give your ${phase} speech. Finish every sentence and conclude the speech cleanly.`;
+    )}\n\nNow give your ${phase} speech. Use at most five complete sentences. Finish every sentence and conclude the speech cleanly.`;
     const encoder = new TextEncoder();
     const speechStream = new ReadableStream<Uint8Array>({
       async start(controller) {
-        let streamedText = "";
+        let generatedText = "";
+        let pendingText = "";
+        let visibleText = "";
 
         try {
-          for (
-            let segmentIndex = 0;
-            segmentIndex < MAX_SPEECH_SEGMENTS;
-            segmentIndex += 1
+          const result = streamText({
+            model,
+            system,
+            prompt: initialPrompt,
+            maxOutputTokens: INITIAL_SPEECH_TOKEN_LIMIT,
+            temperature: 0.75,
+            abortSignal: request.signal,
+          });
+
+          for await (const delta of result.textStream) {
+            generatedText += delta;
+            pendingText += delta;
+
+            const completePrefixLength =
+              completeSentencePrefixLength(pendingText);
+
+            if (completePrefixLength > 0) {
+              const completeText = pendingText.slice(
+                0,
+                completePrefixLength,
+              );
+              visibleText += completeText;
+              controller.enqueue(encoder.encode(completeText));
+              pendingText = pendingText.slice(completePrefixLength);
+            }
+          }
+
+          const finishReason = await result.finishReason;
+
+          if (
+            finishReason === "content-filter" ||
+            finishReason === "error"
           ) {
-            const isContinuation = segmentIndex > 0;
-            const prompt = isContinuation
-              ? `Your previous output was interrupted before the speech was complete. The audience has already seen this exact ending:
+            throw new Error(
+              "The language model stopped before completing the speech.",
+            );
+          }
 
-${streamedText.slice(-1_600)}
-
-Continue from the exact next word without repeating any visible text. Finish the interrupted sentence, complete the argument concisely, and end with complete sentence punctuation.`
-              : initialPrompt;
-            const result = streamText({
+          if (
+            finishReason !== "length" &&
+            endsWithCompleteSentence(generatedText)
+          ) {
+            if (pendingText) {
+              visibleText += pendingText;
+              controller.enqueue(encoder.encode(pendingText));
+            }
+          } else {
+            const finalizer = streamText({
               model,
               system,
-              prompt,
-              maxOutputTokens: isContinuation
-                ? CONTINUATION_TOKEN_LIMIT
-                : INITIAL_SPEECH_TOKEN_LIMIT,
-              temperature: isContinuation ? 0.55 : 0.75,
+              prompt: `The visible debate speech below ended before its intended conclusion:
+
+${visibleText.slice(-1_600)}
+
+Write exactly one short concluding sentence in the same language and first-person voice. Do not repeat any visible sentence, add a preface, or start a new argument. End with a period, question mark, exclamation mark, Chinese full stop, Chinese question mark, or Chinese exclamation mark.`,
+              maxOutputTokens: FINAL_SENTENCE_TOKEN_LIMIT,
+              temperature: 0.35,
               abortSignal: request.signal,
             });
+            let finalizerPendingText = "";
+            let finalizerStarted = false;
 
-            for await (const delta of result.textStream) {
-              streamedText += delta;
-              controller.enqueue(encoder.encode(delta));
+            for await (const delta of finalizer.textStream) {
+              finalizerPendingText += delta;
+              const completePrefixLength =
+                completeSentencePrefixLength(finalizerPendingText);
+
+              if (completePrefixLength > 0) {
+                const completeText = finalizerPendingText.slice(
+                  0,
+                  completePrefixLength,
+                );
+
+                if (!finalizerStarted && visibleText.trim()) {
+                  controller.enqueue(encoder.encode("\n\n"));
+                  visibleText += "\n\n";
+                }
+
+                finalizerStarted = true;
+                visibleText += completeText;
+                controller.enqueue(encoder.encode(completeText));
+                finalizerPendingText =
+                  finalizerPendingText.slice(completePrefixLength);
+              }
             }
 
-            const finishReason = await result.finishReason;
+            const finalizerFinishReason = await finalizer.finishReason;
 
             if (
-              finishReason === "content-filter" ||
-              finishReason === "error"
+              finalizerFinishReason === "content-filter" ||
+              finalizerFinishReason === "error"
             ) {
               throw new Error(
                 "The language model stopped before completing the speech.",
               );
             }
-
-            if (
-              finishReason !== "length" &&
-              speechLooksComplete(streamedText)
-            ) {
-              controller.close();
-              return;
-            }
           }
 
-          throw new Error(
-            "The language model could not finish the speech after automatic continuation.",
+          if (!endsWithCompleteSentence(visibleText)) {
+            throw new Error(
+              "The language model did not produce a complete sentence.",
+            );
+          }
+
+          controller.enqueue(
+            encoder.encode(DEBATE_SPEECH_COMPLETE_MARKER),
           );
+          controller.close();
         } catch (error) {
           console.error("Debate speech stream error:", error);
           controller.error(error);
