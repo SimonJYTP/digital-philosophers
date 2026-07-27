@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-lectures-fine-art-v1/hegel-fine-art-v1-osmaston-1920-pg55334/source.epub",
+  "work": {
+    "id": "hegel-lectures-fine-art-v1",
+    "title": "The Philosophy of Fine Art, Volume 1",
+    "originalTitle": "Vorlesungen über die Ästhetik",
+    "workType": "edited-lectures",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1835,
+    "sourceTier": "P2",
+    "rightsStatus": "public-domain",
+    "notes": "Posthumously edited aesthetics lectures. Use as qualified evidence and preserve the distinction between Hegel's lectures, editorial construction, and translator notes."
+  },
+  "edition": {
+    "id": "hegel-fine-art-v1-osmaston-1920-pg55334",
+    "label": "F. P. B. Osmaston translation, volume 1, 1920; Project Gutenberg #55334",
+    "language": "en",
+    "translator": "Francis Plumptre Beresford Osmaston",
+    "editor": null,
+    "publisher": "G. Bell and Sons",
+    "publishedYear": 1920,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/55334",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-lectures-fine-art-v1/hegel-fine-art-v1-osmaston-1920-pg55334/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-fine-art-v1-osmaston-art-nature",
+      "sequence": 1,
+      "locator": "Introduction I; Project Gutenberg #55334, OEBPS/6814755064691542033_55334-h-0.htm.xhtml",
+      "citationLabel": "Philosophy of Fine Art, vol. 1, Introduction I, Osmaston trans.",
+      "originalText": null,
+      "translationText": "Merely to maintain, in a general way, that mind and the beauty of art which originates therefrom stand higher than the beauty of Nature is no doubt to establish next to nothing. The expression higher is obviously entirely indefinite; it still indicates the beauty of Nature and art as standing juxtaposed in the field of conception, and emphasizes the difference as a quantitative and accordingly external difference. But in predicating of mind and its artistic beauty a higher place in contrast to Nature, we do not denote a distinction which is merely relative. Mind, and mind alone, is pervious to truth, comprehending all in itself, so that all which is beautiful can only be veritably beautiful as partaking in this higher sphere and as begotten of the same.",
+      "interpretiveNote": "艺术美高于自然美不能被理解为简单的数量等级；其根据在于艺术美是精神活动的产物，并在精神领域中获得真理性的规定。",
+      "themes": ["art", "艺术", "beauty", "美", "nature", "自然", "spirit", "精神", "aesthetics", "美学"],
+      "kind": "doctrine",
+      "evidenceClass": "P2",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "posthumously edited aesthetics lectures; historical English translation",
+      "claimIds": [],
+      "priority": 78,
+      "status": "active"
+    }
+  ]
+}

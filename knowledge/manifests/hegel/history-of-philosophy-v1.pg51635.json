@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-lectures-history-philosophy-v1/hegel-history-philosophy-v1-haldane-1892-pg51635/source.epub",
+  "work": {
+    "id": "hegel-lectures-history-philosophy-v1",
+    "title": "Hegel's Lectures on the History of Philosophy: Volume 1",
+    "originalTitle": "Vorlesungen über die Geschichte der Philosophie",
+    "workType": "edited-lectures",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1833,
+    "sourceTier": "P2",
+    "rightsStatus": "public-domain",
+    "notes": "Posthumously edited lecture material. Treat it as contextual evidence and do not silently equate it with a work Hegel prepared for publication."
+  },
+  "edition": {
+    "id": "hegel-history-philosophy-v1-haldane-1892-pg51635",
+    "label": "E. S. Haldane translation, volume 1, first English publication 1892; Project Gutenberg #51635",
+    "language": "en",
+    "translator": "Elizabeth Sanderson Haldane",
+    "editor": null,
+    "publisher": "Kegan Paul, Trench, Trübner & Co.",
+    "publishedYear": 1892,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/51635",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-lectures-history-philosophy-v1/hegel-history-philosophy-v1-haldane-1892-pg51635/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-history-philosophy-v1-development-stage",
+      "sequence": 1,
+      "locator": "Introduction, A.2; Project Gutenberg #51635, OEBPS/748523418124029174_51635-h-7.htm.xhtml",
+      "citationLabel": "Lectures on the History of Philosophy, vol. 1, Introduction A.2, Haldane trans.",
+      "originalText": null,
+      "translationText": "We must know in ancient philosophy or in the philosophy of any given period, what we are going to look for. Or at least we must know that in such a philosophy there is before us a definite stage in the development of thought, and in it those forms and necessities of Mind which lie within the limits of that stage alone are brought into existence.",
+      "interpretiveNote": "哲学史中的每一体系都应被理解为思想发展的一个规定阶段；不能脱离其历史限度，把早期体系当成可以原样返回的永恒答案。",
+      "themes": ["history of philosophy", "哲学史", "development", "发展", "stage", "阶段", "spirit", "精神"],
+      "kind": "method",
+      "evidenceClass": "P2",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "posthumously edited Berlin lectures; historical English translation",
+      "claimIds": [],
+      "priority": 76,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-science-of-logic-v2/hegel-science-of-logic-v2-de-pg6834/source.epub",
+  "work": {
+    "id": "hegel-science-of-logic-v2",
+    "title": "Science of Logic, Volume 2: Subjective Logic",
+    "originalTitle": "Wissenschaft der Logik — Band 2",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1816,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "German text of subjective logic supplied in Project Gutenberg #6834; preserves historical spelling."
+  },
+  "edition": {
+    "id": "hegel-science-of-logic-v2-de-pg6834",
+    "label": "German text, Project Gutenberg #6834",
+    "language": "de",
+    "translator": null,
+    "editor": "Leopold von Henning (1841 preface in source edition)",
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/6834",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-science-of-logic-v2/hegel-science-of-logic-v2-de-pg6834/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-science-logic-v2-pg6834-method",
+      "sequence": 1,
+      "locator": "Vorrede zur ersten Ausgabe; Project Gutenberg #6834, OEBPS/1195105306863704614_6834-8-0.txt.xhtml#id00029",
+      "citationLabel": "Wissenschaft der Logik, Band 2, Vorrede zur ersten Ausgabe",
+      "originalText": "Der Verstand bestimmt und hält die Bestimmungen fest; die Vernunft ist negativ und dialektisch, weil sie die Bestimmungen des Verstands in Nichts auflöst; sie ist positiv, weil sie das Allgemeine erzeugt, und das Besondere darin begreift. Wie der Verstand als etwas Getrenntes von der Vernunft überhaupt, so pflegt auch die dialektische Vernunft als etwas Getrenntes von der positiven Vernunft genommen zu werden. Aber in ihrer Wahrheit ist die Vernunft Geist, der höher als Beides, verständige Vernunft, oder vernünftiger Verstand ist. Er ist das Negative, dasjenige, welches die Qualität sowohl, der dialektischen Vernunft, als des Verstandes ausmacht;—er negirt das Einfache, so setzt er den bestimmten Unterschied des Verstandes, er löst ihn eben so sehr auf, so ist er dialektisch. Er hält sich aber nicht im Nichts dieses Resultates, sondern ist darin ebenso positiv, und hat so das erste Einfache damit hergestellt, aber als Allgemeines, das in sich konkret ist; unter dieses wird nicht ein gegebenes Besonderes subsumirt, sondern in jenem Bestimmen und in der Auflösung desselben hat sich das Besondere schon mit bestimmt. Diese geistige Bewegung, die sich in ihrer Einfachheit ihre Bestimmtheit, und in dieser ihre Gleichheit mit sich selbst giebt, die somit die immanente Entwickelung des Begriffes ist, ist die absolute Methode des Erkennens, und zugleich die immanente Seele des Inhalts selbst.",
+      "translationText": null,
+      "interpretiveNote": "知性固定规定，理性则既是否定和辩证的，又是肯定和思辨的；真正的方法不是从外部套用形式，而是概念内容自身的内在运动。",
+      "themes": ["understanding", "知性", "reason", "理性", "dialectic", "辩证法", "speculative", "思辨", "method", "方法", "concept", "概念"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1816 subjective logic",
+      "claimIds": [],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

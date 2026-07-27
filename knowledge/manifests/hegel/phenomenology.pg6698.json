@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-phenomenology-of-spirit/hegel-phenomenology-de-pg6698/source.epub",
+  "work": {
+    "id": "hegel-phenomenology-of-spirit",
+    "title": "Phenomenology of Spirit",
+    "originalTitle": "Phänomenologie des Geistes",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1807,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "German text supplied in Project Gutenberg #6698. The digital transcription preserves older typography and should be checked against a critical edition for scholarly publication."
+  },
+  "edition": {
+    "id": "hegel-phenomenology-de-pg6698",
+    "label": "German text, Project Gutenberg #6698",
+    "language": "de",
+    "translator": null,
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/6698",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-phenomenology-of-spirit/hegel-phenomenology-de-pg6698/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-phenomenology-pg6698-preface-whole",
+      "sequence": 1,
+      "locator": "Vorrede, paragraph beginning “Das Wahre ist das Ganze”; Project Gutenberg #6698, OEBPS/2977173785339032065_6698-8-0.txt.xhtml#id00061",
+      "citationLabel": "Phänomenologie des Geistes, Vorrede, “Das Wahre ist das Ganze”",
+      "originalText": "Das Wahre ist das Ganze. Das Ganze aber ist nur das durch seine Entwicklung sich vollendende Wesen. Es ist von dem Absoluten zu sagen, daß es wesentlich Resultat, daß es erst am Ende das ist, was es in Wahrheit ist; und hierin eben besteht seine Natur, Wirkliches, Subjekt, oder Sich-selbst-werden, zu sein. So widersprechend es scheinen mag, daß das Absolute wesentlich als Resultat zu begreifen sei, so stellt doch eine geringe Überlegung diesen Schein von Widerspruch zurecht. Der Anfang, das Prinzip, oder das Absolute, wie es zuerst und unmittelbar ausgesprochen wird, ist nur das Allgemeine. Sowenig, wenn ich sage: alle Tiere, dies Wort für eine Zoologie gelten kann, ebenso fällt es auf, daß die Worte des Göttlichen, Absoluten, Ewigen u.s.w. das nicht aussprechen, was darin enthalten ist;—und nur solche Worte drücken in der Tat die Anschauung als das Unmittelbare aus. Was mehr ist, als ein solches Wort, der Übergang auch nur zu einem Satze, ist ein Anderswerden, das zurückgenommen werden muß, ist eine Vermittlung. Diese aber ist das, was perhorresziert wird, als ob dadurch, daß mehr aus ihr gemacht wird denn nur dies, daß sie nichts Absolutes und im Absoluten gar nicht sei, die absolute Erkenntnis aufgegeben wäre.",
+      "translationText": null,
+      "interpretiveNote": "真理不是脱离生成过程的静止结论；整体只有通过自身发展而完成，绝对者也必须被理解为结果、主体和自我生成。",
+      "themes": ["truth", "真理", "whole", "整体", "development", "发展", "result", "结果", "subject", "主体", "becoming", "生成"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1807 Phenomenology of Spirit",
+      "claimIds": [],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

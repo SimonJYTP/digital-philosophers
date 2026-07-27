@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-science-of-logic-v1/hegel-science-of-logic-v1-de-pg6729/source.epub",
+  "work": {
+    "id": "hegel-science-of-logic-v1",
+    "title": "Science of Logic, Volume 1: Objective Logic",
+    "originalTitle": "Wissenschaft der Logik — Band 1",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1812,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "German text of objective logic supplied in Project Gutenberg #6729; preserves historical spelling."
+  },
+  "edition": {
+    "id": "hegel-science-of-logic-v1-de-pg6729",
+    "label": "German text, Project Gutenberg #6729",
+    "language": "de",
+    "translator": null,
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/6729",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-science-of-logic-v1/hegel-science-of-logic-v1-de-pg6729/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-science-logic-v1-pg6729-being-nothing",
+      "sequence": 1,
+      "locator": "Book I, Chapter 1, C. Werden, 1. Einheit des Seyns und Nichts; Project Gutenberg #6729, OEBPS/4470353458397982410_6729-h-7.htm.xhtml",
+      "citationLabel": "Wissenschaft der Logik, Band 1, Sein–Nichts–Werden",
+      "originalText": "Das reine Seyn und das reine Nichts ist also dasselbe. Was die Wahrheit ist, ist weder das Seyn, noch das Nichts, sondern daß das Seyn in Nichts, und das Nichts in Seyn,—nicht übergeht,—sondern übergegangen ist. Aber eben so sehr ist die Wahrheit nicht ihre Ununterschiedenheit, sondern daß sie nicht dasselbe, daß sie absolut unterschieden, aber ebenso ungetrennt und untrennbar sind, und unmittelbar jedes in seinem Gegentheil verschwindet. Ihre Wahrheit ist also diese Bewegung des unmittelbaren Verschwindens des einen in dem andern; das Werden; eine Bewegung, worin beide unterschieden sind, aber durch einen Unterschied, der sich eben so unmittelbar aufgelöst hat.",
+      "translationText": null,
+      "interpretiveNote": "纯有与纯无不是静态同一；二者既有区别又不可分离，并在彼此消逝的运动中以“变易”作为真理。",
+      "themes": ["being", "有", "nothing", "无", "becoming", "变易", "movement", "运动", "dialectic", "辩证法"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1812–1813 objective logic",
+      "claimIds": [],
+      "priority": 99,
+      "status": "active"
+    }
+  ]
+}

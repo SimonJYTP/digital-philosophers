@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-encyclopaedia-logic/hegel-logic-wallace-1892-pg55108/source.epub",
+  "work": {
+    "id": "hegel-encyclopaedia-logic",
+    "title": "The Logic of Hegel",
+    "originalTitle": "Enzyklopädie der philosophischen Wissenschaften, Erster Teil: Die Wissenschaft der Logik",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1817,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "William Wallace's translation of the Encyclopaedia Logic. Keep translator notes distinct from Hegel's numbered sections."
+  },
+  "edition": {
+    "id": "hegel-logic-wallace-1892-pg55108",
+    "label": "William Wallace translation, second revised edition 1892; Project Gutenberg #55108",
+    "language": "en",
+    "translator": "William Wallace",
+    "editor": null,
+    "publisher": "Oxford University Press",
+    "publishedYear": 1892,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/55108",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-encyclopaedia-logic/hegel-logic-wallace-1892-pg55108/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-encyclopaedia-logic-wallace-79",
+      "sequence": 1,
+      "locator": "§79; Project Gutenberg #55108, OEBPS/2069684546195538736_55108-h-1.htm.xhtml",
+      "citationLabel": "Encyclopaedia Logic §79, Wallace trans.",
+      "originalText": null,
+      "translationText": "79.] In point of form Logical doctrine has three sides: (α) the Abstract side, or that of understanding: (ß) the Dialectical, or that of negative reason: (y) the Speculative, or that of positive reason. These three sides do not make three parts of logic, but are stages or 'moments' in every logical entity, that is, of every notion and truth whatever. They may all be put under the first stage, that of understanding, and so kept isolated from each other; but this would give an inadequate conception of them.",
+      "interpretiveNote": "知性、否定的辩证理性和肯定的思辨理性不是可以机械套用的三个外部步骤，而是每个概念和真理自身包含的三个环节。",
+      "themes": ["dialectic", "辩证法", "understanding", "知性", "negative reason", "否定理性", "speculative", "思辨"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Encyclopaedia Logic; historical English translation",
+      "claimIds": [],
+      "priority": 98,
+      "status": "active"
+    }
+  ]
+}

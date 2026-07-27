@@ -1,0 +1,48 @@
+{
+  "philosopherId": "hegel",
+  "sourceFile": "../../source-files/hegel/hegel-encyclopaedia-philosophy-of-mind/hegel-philosophy-of-mind-wallace-1894-pg39064/source.epub",
+  "work": {
+    "id": "hegel-encyclopaedia-philosophy-of-mind",
+    "title": "Hegel's Philosophy of Mind",
+    "originalTitle": "Enzyklopädie der philosophischen Wissenschaften, Dritter Teil: Die Philosophie des Geistes",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1817,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "English translation of the Philosophy of Spirit from Hegel's Encyclopaedia, with translator's introductory essays kept distinct from Hegel's numbered text."
+  },
+  "edition": {
+    "id": "hegel-philosophy-of-mind-wallace-1894-pg39064",
+    "label": "William Wallace translation, Clarendon Press 1894; Project Gutenberg #39064",
+    "language": "en",
+    "translator": "William Wallace",
+    "editor": null,
+    "publisher": "Clarendon Press",
+    "publishedYear": 1894,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/39064",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/hegel/hegel-encyclopaedia-philosophy-of-mind/hegel-philosophy-of-mind-wallace-1894-pg39064/source.epub"
+  },
+  "passages": [
+    {
+      "id": "hegel-mind-wallace-430-recognition",
+      "sequence": 1,
+      "locator": "§430; Project Gutenberg #39064, OEBPS/4422706250653699980_39064-h-6.html.xhtml",
+      "citationLabel": "Philosophy of Mind §430, Wallace trans.",
+      "originalText": null,
+      "translationText": "§ 430. Here there is a self-consciousness for a self-consciousness, at first immediately as one of two things for another. In that other as ego I behold myself, and yet also an immediately existing object, another ego absolutely independent of me and opposed to me. (The suppression of the singleness of self-consciousness was only a first step in the suppression, and it merely led to the characterisation of it as particular.) This contradiction gives either self-consciousness the impulse to show itself as a free self, and to exist as such for the other:—the process of recognition.",
+      "interpretiveNote": "自我意识不能只靠孤立的自我确信成立；它在另一个独立自我中看见自己，由此进入相互承认的过程。",
+      "themes": ["recognition", "承认", "self-consciousness", "自我意识", "freedom", "自由", "other", "他者"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Encyclopaedia philosophy of spirit; historical English translation",
+      "claimIds": [],
+      "priority": 94,
+      "status": "active"
+    }
+  ]
+}
