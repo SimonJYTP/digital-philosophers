@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-apology/socrates-apology-cary-reading-2026/source.epub",
+  "work": {
+    "id": "socrates-plato-apology",
+    "title": "Plato, Apology",
+    "originalTitle": "Ἀπολογία Σωκράτους",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Socrates wrote no philosophical works. The Apology is Plato's literary representation of his defence; preserve Plato's authorship and distinguish dramatic speech from a verbatim trial transcript."
+  },
+  "edition": {
+    "id": "socrates-apology-cary-reading-2026",
+    "label": "2026 reading EPUB of Henry Cary's Apology, prepared from Project Gutenberg #13726",
+    "language": "en",
+    "translator": "Henry Cary",
+    "editor": null,
+    "publisher": null,
+    "publishedYear": 2026,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "The embedded source note identifies Project Gutenberg #13726 and Henry Cary's translation. Verify the provenance and rights of this 2026 repackaging before production distribution.",
+    "r2Key": "sources/socrates/socrates-plato-apology/socrates-apology-cary-reading-2026/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-apology-cary-reading-2026-section-6",
+      "sequence": 1,
+      "locator": "Section 6; EPUB/text/ch002.xhtml",
+      "citationLabel": "Plato, Apology §6, Cary trans., 2026 reading EPUB",
+      "originalText": null,
+      "translationText": "When I left him, I reasoned thus with myself: I am wiser than this man, for neither of us appears to know anything great and good; but he fancies he knows something, although he knows nothing; whereas I, as I do not know anything, so I do not fancy I do. In this trifling particular, then, I appear to be wiser than he, because I do not fancy I know what I do not know.",
+      "interpretiveNote": "This is a reformatted duplicate of the Cary text in Gutenberg #13726. It is archived for provenance but kept out of retrieval to prevent duplicate results.",
+      "themes": ["wisdom", "智慧", "ignorance", "无知", "provenance", "版本来源"],
+      "kind": "provenance",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "2026 derivative of a historical translation",
+      "claimIds": [],
+      "priority": 20,
+      "status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-apology/socrates-apology-jowett-pg1656/source.epub",
+  "work": {
+    "id": "socrates-plato-apology",
+    "title": "Plato, Apology",
+    "originalTitle": "Ἀπολογία Σωκράτους",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Socrates wrote no philosophical works. The Apology is Plato's literary representation of his defence; preserve Plato's authorship and distinguish dramatic speech from a verbatim trial transcript."
+  },
+  "edition": {
+    "id": "socrates-apology-jowett-pg1656",
+    "label": "Benjamin Jowett English translation; Project Gutenberg #1656",
+    "language": "en",
+    "translator": "Benjamin Jowett",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 1999,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1656",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution. Jowett's historical translation should be checked against the Greek for precise terminology.",
+    "r2Key": "sources/socrates/socrates-plato-apology/socrates-apology-jowett-pg1656/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-apology-jowett-pg1656-21d",
+      "sequence": 1,
+      "locator": "Apology 21d; OEBPS/4814364407290004057_1656-h-2.htm.xhtml",
+      "citationLabel": "Plato, Apology 21d, Jowett trans.",
+      "originalText": null,
+      "translationText": "Well, although I do not suppose that either of us knows anything really beautiful and good, I am better off than he is,—for he knows nothing, and thinks that he knows; I neither know nor think that I know.",
+      "interpretiveNote": "Socratic human wisdom consists in not adding a false claim of knowledge to one's ignorance. The passage does not mean that Socrates knows literally nothing or that ignorance itself is sufficient wisdom.",
+      "themes": ["wisdom", "智慧", "ignorance", "无知", "knowledge", "知识", "humility", "谦逊", "questioning", "诘问"],
+      "kind": "identity",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation",
+      "claimIds": [],
+      "priority": 100,
+      "status": "active"
+    },
+    {
+      "id": "socrates-apology-jowett-pg1656-29d-30a",
+      "sequence": 2,
+      "locator": "Apology 29d–30a; OEBPS/4814364407290004057_1656-h-2.htm.xhtml",
+      "citationLabel": "Plato, Apology 29d–30a, Jowett trans.",
+      "originalText": null,
+      "translationText": "You, my friend,—a citizen of the great and mighty and wise city of Athens,—are you not ashamed of heaping up the greatest amount of money and honour and reputation, and caring so little about wisdom and truth and the greatest improvement of the soul, which you never regard or heed at all?",
+      "interpretiveNote": "The challenge reorders priorities: care of wisdom, truth, character, and soul precedes the accumulation of wealth and reputation. It is a call to examination, not contempt for every material need.",
+      "themes": ["care of soul", "灵魂照料", "virtue", "德性", "wealth", "财富", "reputation", "名誉", "examination", "省察"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation",
+      "claimIds": [],
+      "priority": 98,
+      "status": "active"
+    },
+    {
+      "id": "socrates-apology-jowett-pg1656-38a",
+      "sequence": 3,
+      "locator": "Apology 38a; OEBPS/4814364407290004057_1656-h-2.htm.xhtml",
+      "citationLabel": "Plato, Apology 38a, Jowett trans.",
+      "originalText": null,
+      "translationText": "daily to discourse about virtue, and of those other things about which you hear me examining myself and others, is the greatest good of man, and that the unexamined life is not worth living",
+      "interpretiveNote": "The examined life is an ongoing practice of dialogue and self-testing. The famous line should not be used to declare another person's life worthless or to intensify distress.",
+      "themes": ["examined life", "省察生活", "inquiry", "探究", "dialogue", "对话", "virtue", "德性", "self-examination", "自省"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation",
+      "claimIds": [],
+      "priority": 99,
+      "status": "active"
+    }
+  ]
+}

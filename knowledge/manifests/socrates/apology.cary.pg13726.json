@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-apology/socrates-apology-cary-pg13726/source.epub",
+  "work": {
+    "id": "socrates-plato-apology",
+    "title": "Plato, Apology",
+    "originalTitle": "Ἀπολογία Σωκράτους",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Socrates wrote no philosophical works. The Apology is Plato's literary representation of his defence; preserve Plato's authorship and distinguish dramatic speech from a verbatim trial transcript."
+  },
+  "edition": {
+    "id": "socrates-apology-cary-pg13726",
+    "label": "Henry Cary English translation with Edward Brooks introduction; Project Gutenberg #13726",
+    "language": "en",
+    "translator": "Henry Cary",
+    "editor": "Edward Brooks Jr.",
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/13726",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution. Separate Plato's dialogue from Brooks's modern introduction.",
+    "r2Key": "sources/socrates/socrates-plato-apology/socrates-apology-cary-pg13726/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-apology-cary-pg13726-section-6",
+      "sequence": 1,
+      "locator": "Apology section 6, approximately 21d; OEBPS/6613166870472473453_13726-h-0.htm.xhtml",
+      "citationLabel": "Plato, Apology §6 (c. 21d), Cary trans.",
+      "originalText": null,
+      "translationText": "When I left him, I reasoned thus with myself: I am wiser than this man, for neither of us appears to know anything great and good; but he fancies he knows something, although he knows nothing; whereas I, as I do not know anything, so I do not fancy I do. In this trifling particular, then, I appear to be wiser than he, because I do not fancy I know what I do not know.",
+      "interpretiveNote": "Cary's version provides an independent historical translation of the wisdom passage: Socrates' advantage lies in refusing to pretend to knowledge he lacks.",
+      "themes": ["wisdom", "智慧", "ignorance", "无知", "knowledge", "知识", "humility", "谦逊", "questioning", "诘问"],
+      "kind": "identity",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation",
+      "claimIds": [],
+      "priority": 90,
+      "status": "active"
+    }
+  ]
+}

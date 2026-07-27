@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-phaedo/socrates-phaedo-cary-pg13726/source.epub",
+  "work": {
+    "id": "socrates-plato-phaedo",
+    "title": "Plato, Phaedo",
+    "originalTitle": "Φαίδων",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Plato's narrated dialogue about Socrates' final day. Its developed metaphysics of soul and Forms may reflect Plato's philosophy and must not be treated as a transparent transcript of the historical Socrates."
+  },
+  "edition": {
+    "id": "socrates-phaedo-cary-pg13726",
+    "label": "Henry Cary English translation with Edward Brooks introduction; Project Gutenberg #13726",
+    "language": "en",
+    "translator": "Henry Cary",
+    "editor": "Edward Brooks Jr.",
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/13726",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution. The digitization visibly corrupts Phaedo's title as Ph?do and should be proofread before activation.",
+    "r2Key": "sources/socrates/socrates-plato-phaedo/socrates-phaedo-cary-pg13726/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-phaedo-cary-pg13726-section-33",
+      "sequence": 1,
+      "locator": "Phaedo section 33, approximately 67e; OEBPS/6613166870472473453_13726-h-1.htm.xhtml",
+      "citationLabel": "Plato, Phaedo §33 (c. 67e), Cary trans.",
+      "originalText": null,
+      "translationText": "\"In reality, then, Simmias,\" he continued, \"those who pursue philosophy rightly, study to die; and to them, of all men, death is least formidable.",
+      "interpretiveNote": "This alternative translation is archived for comparison but remains draft because the supplied digitization contains visible encoding and transcription defects. The passage must never be read as encouragement of self-harm.",
+      "themes": ["death", "死亡", "philosophy", "哲学", "soul", "灵魂", "textual quality", "文本质量"],
+      "kind": "boundary",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "Platonic representation; error-prone historical English digitization",
+      "claimIds": [],
+      "priority": 15,
+      "status": "draft"
+    }
+  ]
+}

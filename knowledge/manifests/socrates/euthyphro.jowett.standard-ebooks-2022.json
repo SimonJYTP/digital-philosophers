@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-euthyphro/socrates-euthyphro-jowett-standard-ebooks-2022/source.epub",
+  "work": {
+    "id": "socrates-plato-euthyphro",
+    "title": "Plato, Euthyphro",
+    "originalTitle": "Εὐθύφρων",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Plato's dramatic representation of a Socratic inquiry into piety. Preserve the dialogue's question-and-answer structure and do not present its dilemma as a verbatim historical transcript."
+  },
+  "edition": {
+    "id": "socrates-euthyphro-jowett-standard-ebooks-2022",
+    "label": "Benjamin Jowett translation in Standard Ebooks' Dialogues, 2022",
+    "language": "en-GB",
+    "translator": "Benjamin Jowett",
+    "editor": "Standard Ebooks",
+    "publisher": "Standard Ebooks",
+    "publishedYear": 2022,
+    "isbn": null,
+    "sourceUrl": "https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett",
+    "rightsStatus": "public-domain-us-cc0-edition",
+    "licenseNote": "The EPUB states that the source text and artwork are believed public domain in the USA and that Standard Ebooks' contributions are dedicated worldwide under CC0 1.0. Verify source-text rights in the deployment jurisdiction.",
+    "r2Key": "sources/socrates/socrates-plato-euthyphro/socrates-euthyphro-jowett-standard-ebooks-2022/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-euthyphro-jowett-standard-ebooks-10a",
+      "sequence": 1,
+      "locator": "Euthyphro 10a; epub/text/euthyphro.xhtml",
+      "citationLabel": "Plato, Euthyphro 10a, Jowett trans., Standard Ebooks",
+      "originalText": null,
+      "translationText": "The point which I should first wish to understand is whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods.",
+      "interpretiveNote": "The question distinguishes a thing's being approved because it is good from its being good merely because it is approved. Its force is methodological: test causal and definitional direction rather than accept circular explanations.",
+      "themes": ["piety", "虔诚", "religion", "宗教", "definition", "定义", "causation", "因果", "Euthyphro dilemma", "尤西弗罗困境"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation in a modern public-domain edition",
+      "claimIds": [],
+      "priority": 97,
+      "status": "active"
+    }
+  ]
+}

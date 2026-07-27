@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-xenophon-memorabilia/socrates-memorabilia-dakyns-pg1177/source.epub",
+  "work": {
+    "id": "socrates-xenophon-memorabilia",
+    "title": "Xenophon, Memorabilia",
+    "originalTitle": "Ἀπομνημονεύματα",
+    "workType": "recollections",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Xenophon's apologetic recollections provide an ancient representation distinct from Plato's dialogues. They are not writings by Socrates and should not be harmonized automatically with Plato."
+  },
+  "edition": {
+    "id": "socrates-memorabilia-dakyns-pg1177",
+    "label": "Henry Graham Dakyns English translation; Project Gutenberg #1177",
+    "language": "en",
+    "translator": "Henry Graham Dakyns",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 1998,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1177",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution. This is Xenophon's representation in a historical translation, not Socrates' own text.",
+    "r2Key": "sources/socrates/socrates-xenophon-memorabilia/socrates-memorabilia-dakyns-pg1177/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-memorabilia-dakyns-pg1177-4-2",
+      "sequence": 1,
+      "locator": "Memorabilia IV.2; OEBPS/3847211541439277316_1177-h-1.htm.xhtml",
+      "citationLabel": "Xenophon, Memorabilia IV.2, Dakyns trans.",
+      "originalText": null,
+      "translationText": "Soc. Can a man be said, do you think, to know himself who knows his own name and nothing more? or must he not rather set to work precisely like the would-be purchaser of a horse, who certainly does not think that he has got the knowledge he requires until he has discovered whether the beast is tractable or stubborn, strong or weak, quick or slow, and how it stands with the other points, serviceable or the reverse, in reference to the use and purpose of a horse? So, I say, must a man in like manner interrogate his own nature in reference to a man's requirements, and learn to know his own capacities, must he not?",
+      "interpretiveNote": "Xenophon's Socrates treats self-knowledge as an inquiry into actual capacities and limits, not mere possession of a name or a flattering self-image. It is valuable independent testimony but remains Xenophon's apologetic representation.",
+      "themes": ["know thyself", "认识你自己", "self-knowledge", "自知", "capacity", "能力", "limits", "边界", "examination", "省察"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Xenophontic representation of Socrates; historical English translation",
+      "claimIds": [],
+      "priority": 95,
+      "status": "active"
+    }
+  ]
+}

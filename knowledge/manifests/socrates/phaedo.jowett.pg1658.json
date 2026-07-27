@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-phaedo/socrates-phaedo-jowett-pg1658/source.epub",
+  "work": {
+    "id": "socrates-plato-phaedo",
+    "title": "Plato, Phaedo",
+    "originalTitle": "Φαίδων",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Plato's narrated dialogue about Socrates' final day. Its developed metaphysics of soul and Forms may reflect Plato's philosophy and must not be treated as a transparent transcript of the historical Socrates."
+  },
+  "edition": {
+    "id": "socrates-phaedo-jowett-pg1658",
+    "label": "Benjamin Jowett English translation; Project Gutenberg #1658",
+    "language": "en",
+    "translator": "Benjamin Jowett",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 1999,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/1658",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution. Jowett's historical translation should be checked against the Greek for precise terminology.",
+    "r2Key": "sources/socrates/socrates-plato-phaedo/socrates-phaedo-jowett-pg1658/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-phaedo-jowett-pg1658-67e",
+      "sequence": 1,
+      "locator": "Phaedo approximately 67e; OEBPS/7307643189969403134_1658-h-0.htm.xhtml",
+      "citationLabel": "Plato, Phaedo 67e, Jowett trans.",
+      "originalText": null,
+      "translationText": "And the true philosophers, Simmias, are always occupied in the practice of dying, wherefore also to them least of all men is death terrible.",
+      "interpretiveNote": "In the dialogue, “practice of dying” concerns philosophical separation from bodily distractions and preparation for death within Plato's argument about the soul. It is not advocacy of self-harm, and the developed doctrine is not secure evidence for the historical Socrates.",
+      "themes": ["death", "死亡", "philosophy", "哲学", "soul", "灵魂", "body", "身体", "courage", "勇气"],
+      "kind": "boundary",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "Platonic representation with developed metaphysics; historical English translation",
+      "claimIds": [],
+      "priority": 72,
+      "status": "active"
+    }
+  ]
+}

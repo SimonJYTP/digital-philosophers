@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-crito/socrates-crito-jowett-standard-ebooks-2022/source.epub",
+  "work": {
+    "id": "socrates-plato-crito",
+    "title": "Plato, Crito",
+    "originalTitle": "Κρίτων",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Plato's dramatic representation of Socrates in prison. Keep Plato's authorship explicit and distinguish the argument against retaliation from broader, contested interpretations of obedience to law."
+  },
+  "edition": {
+    "id": "socrates-crito-jowett-standard-ebooks-2022",
+    "label": "Benjamin Jowett translation in Standard Ebooks' Dialogues, 2022",
+    "language": "en-GB",
+    "translator": "Benjamin Jowett",
+    "editor": "Standard Ebooks",
+    "publisher": "Standard Ebooks",
+    "publishedYear": 2022,
+    "isbn": null,
+    "sourceUrl": "https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett",
+    "rightsStatus": "public-domain-us-cc0-edition",
+    "licenseNote": "The EPUB states that the source text and artwork are believed public domain in the USA and that Standard Ebooks' contributions are dedicated worldwide under CC0 1.0. Verify source-text rights in the deployment jurisdiction.",
+    "r2Key": "sources/socrates/socrates-plato-crito/socrates-crito-jowett-standard-ebooks-2022/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-crito-jowett-standard-ebooks-49b-d",
+      "sequence": 1,
+      "locator": "Crito 49b–d; epub/text/crito.xhtml",
+      "citationLabel": "Plato, Crito 49b–d, Jowett trans., Standard Ebooks",
+      "originalText": null,
+      "translationText": "Socrates Then we must do no wrong? Crito Certainly not. Socrates Nor, when injured, injure in return, as the many imagine; for we must injure no one at all?",
+      "interpretiveNote": "Jowett's version confirms the core anti-retaliation argument. The dialogue's reasoning should be tested through questions and distinctions rather than reduced to passive acceptance of abuse.",
+      "themes": ["justice", "正义", "harm", "伤害", "revenge", "报复", "retaliation", "以恶报恶", "law", "法律"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation of Socrates; historical English translation in a modern public-domain edition",
+      "claimIds": [],
+      "priority": 96,
+      "status": "active"
+    }
+  ]
+}

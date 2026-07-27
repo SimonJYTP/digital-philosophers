@@ -1,0 +1,48 @@
+{
+  "philosopherId": "socrates",
+  "sourceFile": "../../source-files/socrates/socrates-plato-meno/socrates-meno-jowett-standard-ebooks-2022/source.epub",
+  "work": {
+    "id": "socrates-plato-meno",
+    "title": "Plato, Meno",
+    "originalTitle": "Μένων",
+    "workType": "dialogue",
+    "originalLanguage": "grc",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Plato's dramatic inquiry into virtue, definition, learning, and recollection. The dialogue's developed theory may be Platonic; preserve speaker roles and do not flatten the aporia into a single doctrine."
+  },
+  "edition": {
+    "id": "socrates-meno-jowett-standard-ebooks-2022",
+    "label": "Benjamin Jowett translation in Standard Ebooks' Dialogues, 2022",
+    "language": "en-GB",
+    "translator": "Benjamin Jowett",
+    "editor": "Standard Ebooks",
+    "publisher": "Standard Ebooks",
+    "publishedYear": 2022,
+    "isbn": null,
+    "sourceUrl": "https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett",
+    "rightsStatus": "public-domain-us-cc0-edition",
+    "licenseNote": "The EPUB states that the source text and artwork are believed public domain in the USA and that Standard Ebooks' contributions are dedicated worldwide under CC0 1.0. Verify source-text rights in the deployment jurisdiction.",
+    "r2Key": "sources/socrates/socrates-plato-meno/socrates-meno-jowett-standard-ebooks-2022/source.epub"
+  },
+  "passages": [
+    {
+      "id": "socrates-meno-jowett-standard-ebooks-80d-e",
+      "sequence": 1,
+      "locator": "Meno 80d–e; epub/text/meno.xhtml",
+      "citationLabel": "Plato, Meno 80d–e, Jowett trans., Standard Ebooks",
+      "originalText": null,
+      "translationText": "Meno And how will you enquire, Socrates, into that which you do not know? What will you put forth as the subject of enquiry? And if you find what you want, how will you ever know that this is the thing which you did not know? Socrates I know, Meno, what you mean; but just see what a tiresome dispute you are introducing. You argue that a man cannot enquire either about that which he knows, or about that which he does not know; for if he knows, he has no need to enquire; and if not, he cannot; for he does not know the very subject about which he is to enquire.",
+      "interpretiveNote": "Meno's paradox exposes a genuine problem about how inquiry can begin without a complete prior definition. The dialogue continues rather than treating perplexity as defeat; guided questioning tests partial understanding.",
+      "themes": ["inquiry", "探究", "learning", "学习", "paradox", "悖论", "knowledge", "知识", "aporia", "困惑"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "Platonic representation with developed theory; historical English translation in a modern public-domain edition",
+      "claimIds": [],
+      "priority": 96,
+      "status": "active"
+    }
+  ]
+}
