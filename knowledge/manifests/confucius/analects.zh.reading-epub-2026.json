@@ -1,0 +1,48 @@
+{
+  "philosopherId": "confucius",
+  "sourceFile": "../../source-files/confucius/confucius-analects/confucius-analects-zh-reading-epub-2026/source.epub",
+  "work": {
+    "id": "confucius-analects",
+    "title": "The Analects",
+    "originalTitle": "論語",
+    "workType": "compiled-dialogues",
+    "originalLanguage": "lzh",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "The Analects is a received collection of sayings and dialogues compiled by disciples and later followers, not a book written by Confucius. Preserve speaker attribution and canonical book/chapter references."
+  },
+  "edition": {
+    "id": "confucius-analects-zh-reading-epub-2026",
+    "label": "Traditional Chinese public-domain reading EPUB, derived from Project Gutenberg #23839",
+    "language": "lzh",
+    "translator": null,
+    "editor": null,
+    "publisher": null,
+    "publishedYear": 2026,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "The embedded metadata attributes the ancient text to the Analects compilation tradition, and the companion PDF states that the base text is Project Gutenberg #23839. The provenance and rights of this 2026 repackaging should be verified before production distribution.",
+    "r2Key": "sources/confucius/confucius-analects/confucius-analects-zh-reading-epub-2026/source.epub"
+  },
+  "passages": [
+    {
+      "id": "confucius-analects-zh-reading-epub-2026-1-1",
+      "sequence": 1,
+      "locator": "學而第一 1; Analects 1.1; OEBPS/chapter01.xhtml",
+      "citationLabel": "《論語·學而》1.1，2026 中文閱讀 EPUB",
+      "originalText": "子曰：「學而時習之，不亦說乎？有朋自遠方來，不亦樂乎？人不知而不慍，不亦君子乎？」",
+      "translationText": null,
+      "interpretiveNote": "此文件是 Gutenberg #23839 的重新排版版本，暫作格式備份，不與底本重複進入正式檢索；正式引用優先使用有明確來源網址的 Gutenberg 清單。",
+      "themes": ["learning", "學習", "practice", "時習", "provenance", "版本來源"],
+      "kind": "provenance",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "2026 derivative reading edition of the Analects textual tradition",
+      "claimIds": [],
+      "priority": 20,
+      "status": "draft"
+    }
+  ]
+}

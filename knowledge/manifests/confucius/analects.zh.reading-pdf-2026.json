@@ -1,0 +1,48 @@
+{
+  "philosopherId": "confucius",
+  "sourceFile": "../../source-files/confucius/confucius-analects/confucius-analects-zh-reading-pdf-2026/source.pdf",
+  "work": {
+    "id": "confucius-analects",
+    "title": "The Analects",
+    "originalTitle": "論語",
+    "workType": "compiled-dialogues",
+    "originalLanguage": "lzh",
+    "firstPublishedYear": null,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "The Analects is a received collection of sayings and dialogues compiled by disciples and later followers, not a book written by Confucius. Preserve speaker attribution and canonical book/chapter references."
+  },
+  "edition": {
+    "id": "confucius-analects-zh-reading-pdf-2026",
+    "label": "Traditional Chinese public-domain reading PDF, derived from Project Gutenberg #23839",
+    "language": "lzh",
+    "translator": null,
+    "editor": null,
+    "publisher": null,
+    "publishedYear": 2026,
+    "isbn": null,
+    "sourceUrl": null,
+    "rightsStatus": "verify-before-upload",
+    "licenseNote": "The PDF title page states that its base text is Project Gutenberg #23839 and that it was repaginated as an ancient-text reading edition. Verify the provenance and rights of the repackaging before production distribution.",
+    "r2Key": "sources/confucius/confucius-analects/confucius-analects-zh-reading-pdf-2026/source.pdf"
+  },
+  "passages": [
+    {
+      "id": "confucius-analects-zh-reading-pdf-2026-1-1",
+      "sequence": 1,
+      "locator": "PDF page 2, 學而第一 1; Analects 1.1",
+      "citationLabel": "《論語·學而》1.1，2026 中文閱讀 PDF，第 2 頁",
+      "originalText": "子曰：「學而時習之，不亦說乎？有朋自遠方來，不亦樂乎？\n人不知而不慍，不亦君子乎？」",
+      "translationText": null,
+      "interpretiveNote": "此 PDF 是 Gutenberg #23839 的版式衍生文件，頁面已目視檢查且文字可讀；為避免與同底本重複召回，片段保持待審核狀態。",
+      "themes": ["learning", "學習", "practice", "時習", "provenance", "版本來源"],
+      "kind": "provenance",
+      "evidenceClass": "P1",
+      "agentUse": "THIRD_PERSON_BACKGROUND",
+      "period": "2026 derivative reading edition of the Analects textual tradition",
+      "claimIds": [],
+      "priority": 20,
+      "status": "draft"
+    }
+  ]
+}
