@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-prolegomena/kant-prolegomena-carus-1912-pg52821/source.epub",
+  "work": {
+    "id": "kant-prolegomena",
+    "title": "Prolegomena to Any Future Metaphysics",
+    "originalTitle": "Prolegomena zu einer jeden künftigen Metaphysik, die als Wissenschaft wird auftreten können",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1783,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Paul Carus's editorial English version includes extensive prefatory and supplementary material that must remain distinct from Kant's Prolegomena."
+  },
+  "edition": {
+    "id": "kant-prolegomena-carus-1912-pg52821",
+    "label": "Paul Carus editorial English version, third edition 1912; Project Gutenberg #52821",
+    "language": "en",
+    "translator": "Paul Carus (editorial English version)",
+    "editor": "Paul Carus",
+    "publisher": "Open Court Publishing Company",
+    "publishedYear": 1912,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/52821",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-prolegomena/kant-prolegomena-carus-1912-pg52821/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-prolegomena-carus-four-questions",
+      "sequence": 1,
+      "locator": "Preamble, division of the main transcendental question; Project Gutenberg #52821, OEBPS/1289855000615638354_52821-h-0.htm.xhtml",
+      "citationLabel": "Prolegomena, four transcendental questions, Carus ed.",
+      "originalText": null,
+      "translationText": "But, in order to rise from these actual and at the same time well-grounded pure cognitions a priori to such a possible cognition of the same as we are seeking, viz., to metaphysics as a science, we must comprehend that which occasions it, I mean the mere natural, though in spite of its truth not unsuspected, cognition a priori which lies at the bottom of that science, the elaboration of which without any critical investigation of its possibility is commonly called metaphysics. In a word, we must comprehend the natural conditions of such a science as a part of our inquiry, and thus the transcendental problem will be gradually answered by a division into four questions: 1. How is pure mathematics possible? 2. How is pure natural science possible? 3. How is metaphysics in general possible? 4. How is metaphysics as a science possible?",
+      "interpretiveNote": "批判哲学不直接扩张形而上学断言，而是先把先验问题分解为数学、自然科学、一般形而上学以及作为科学的形而上学何以可能。",
+      "themes": ["metaphysics", "形而上学", "transcendental", "先验", "possibility", "可能性", "science", "科学", "a priori", "先天"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1783 critical clarification; historical English version",
+      "claimIds": ["CLM-0013"],
+      "priority": 94,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-critique-of-pure-reason/kant-cpr-de-1787-pg6343/source.epub",
+  "work": {
+    "id": "kant-critique-of-pure-reason",
+    "title": "Critique of Pure Reason",
+    "originalTitle": "Kritik der reinen Vernunft",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1781,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "German text of the second edition (1787), digitally prepared from Projekt Gutenberg-DE material. Preserve A/B pagination when adding further passages."
+  },
+  "edition": {
+    "id": "kant-cpr-de-1787-pg6343",
+    "label": "German second edition (1787), Project Gutenberg #6343",
+    "language": "de",
+    "translator": null,
+    "editor": "Gerd Bouillon (digital preparation)",
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/6343",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-critique-of-pure-reason/kant-cpr-de-1787-pg6343/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-cpr-de-1787-a51-b75",
+      "sequence": 1,
+      "locator": "A51/B75; Project Gutenberg #6343, OEBPS/19727000611328334_6343-8-0.txt.xhtml#id00156",
+      "citationLabel": "Kritik der reinen Vernunft A51/B75, 1787 German edition",
+      "originalText": "Wollen wir die Rezeptivität unseres Gemüts, Vorstellungen zu empfangen, sofern es auf irgendeine Weise affiziert wird, Sinnlichkeit nennen, so ist dagegen das Vermögen, Vorstellungen selbst hervorzubringen, oder die Spontaneität des Erkenntnisses, der Verstand. Unsere Natur bringt es so mit sich, daß die Anschauung niemals anders als sinnlich sein kann, d.i. nur die Art enthält, wie wir von Gegenständen affiziert werden. Dagegen ist das Vermögen, den Gegenstand sinnlicher Anschauung zu denken, der Verstand. Keine dieser Eigenschaften ist der anderen vorzuziehen. Ohne Sinnlichkeit würde uns kein Gegenstand gegeben, und ohne Verstand keiner gedacht werden. Gedanken ohne Inhalt sind leer, Anschauungen ohne Begriffe sind blind. Daher ist es ebenso notwendig, seine Begriffe sinnlich zu machen, (d.i. ihnen den Gegenstand in der Anschauung beizufügen,) als seine Anschauungen sich verständlich zu machen (d.i. sie unter Begriffe zu bringen). Beide Vermögen, oder Fähigkeiten, können auch ihre Funktionen nicht vertauschen. Der Verstand vermag nichts anzuschauen, und die Sinne nichts zu denken. Nur daraus, daß sie sich vereinigen, kann Erkenntnis entspringen. Deswegen darf man aber doch nicht ihren Anteil vermischen, sondern man hat große Ursache, jedes von dem andern sorgfältig abzusondern, und zu unterscheiden. Daher unterscheiden wir die Wissenschaft der Regeln der Sinnlichkeit überhaupt, d.i. Ästhetik, von der Wissenschaft der Verstandesregeln überhaupt, d.i. der Logik.",
+      "translationText": null,
+      "interpretiveNote": "感性负责接受对象给予的表象，知性负责自发地以概念思考对象；知识来自二者结合，同时必须区分其不同作用。",
+      "themes": ["Sinnlichkeit", "感性", "Verstand", "知性", "Anschauung", "直观", "Begriff", "概念", "Erkenntnis", "知识"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "DIRECT_FIRST_PERSON",
+      "period": "1787 second edition of the Critique of Pure Reason",
+      "claimIds": ["CLM-0017", "CLM-0019"],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

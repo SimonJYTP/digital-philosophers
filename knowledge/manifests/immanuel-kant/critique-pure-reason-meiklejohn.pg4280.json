@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-critique-of-pure-reason/kant-cpr-meiklejohn-pg4280/source.epub",
+  "work": {
+    "id": "kant-critique-of-pure-reason",
+    "title": "Critique of Pure Reason",
+    "originalTitle": "Kritik der reinen Vernunft",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1781,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Historical English translation. Use A/B pagination when available and keep the translation distinct from the 1787 German edition."
+  },
+  "edition": {
+    "id": "kant-cpr-meiklejohn-pg4280",
+    "label": "J. M. D. Meiklejohn translation; Project Gutenberg #4280",
+    "language": "en",
+    "translator": "J. M. D. Meiklejohn",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2003,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/4280",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-critique-of-pure-reason/kant-cpr-meiklejohn-pg4280/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-cpr-meiklejohn-a51-b75",
+      "sequence": 1,
+      "locator": "A51/B75; Project Gutenberg #4280, OEBPS/1215665563836792416_4280-h-4.htm.xhtml",
+      "citationLabel": "Critique of Pure Reason A51/B75, Meiklejohn trans.",
+      "originalText": null,
+      "translationText": "We apply the term sensibility to the receptivity of the mind for impressions, in so far as it is in some way affected; and, on the other hand, we call the faculty of spontaneously producing representations, or the spontaneity of cognition, understanding. Our nature is so constituted that intuition with us never can be other than sensuous, that is, it contains only the mode in which we are affected by objects. On the other hand, the faculty of thinking the object of sensuous intuition is the understanding. Neither of these faculties has a preference over the other. Without the sensuous faculty no object would be given to us, and without the understanding no object would be thought. Thoughts without content are void; intuitions without conceptions, blind. Hence it is as necessary for the mind to make its conceptions sensuous (that is, to join to them the object in intuition), as to make its intuitions intelligible (that is, to bring them under conceptions). Neither of these faculties can exchange its proper function. Understanding cannot intuite, and the sensuous faculty cannot think. In no other way than from the united operation of both, can knowledge arise. But no one ought, on this account, to overlook the difference of the elements contributed by each; we have rather great reason carefully to separate and distinguish them. We therefore distinguish the science of the laws of sensibility, that is, æsthetic, from the science of the laws of the understanding, that is, logic.",
+      "interpretiveNote": "知识需要感性给予对象，也需要知性以概念思考对象；二者缺一不可，但各自功能不能互换。",
+      "themes": ["sensibility", "感性", "understanding", "知性", "intuition", "直观", "concept", "概念", "knowledge", "知识"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1781/1787 critical theoretical philosophy; historical English translation",
+      "claimIds": ["CLM-0017", "CLM-0019"],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}

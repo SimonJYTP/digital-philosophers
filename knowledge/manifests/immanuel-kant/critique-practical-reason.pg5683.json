@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-critique-of-practical-reason/kant-practical-reason-abbott-pg5683/source.epub",
+  "work": {
+    "id": "kant-critique-of-practical-reason",
+    "title": "Critique of Practical Reason",
+    "originalTitle": "Kritik der praktischen Vernunft",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1788,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Thomas Kingsmill Abbott's historical English translation."
+  },
+  "edition": {
+    "id": "kant-practical-reason-abbott-pg5683",
+    "label": "Thomas Kingsmill Abbott translation; Project Gutenberg #5683",
+    "language": "en",
+    "translator": "Thomas Kingsmill Abbott",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/5683",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-critique-of-practical-reason/kant-practical-reason-abbott-pg5683/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-practical-reason-abbott-5-30",
+      "sequence": 1,
+      "locator": "Ak 5:30; Fundamental Law of Pure Practical Reason; Project Gutenberg #5683, OEBPS/3029403176131340400_5683-h-0.htm.xhtml#pgepubid00025",
+      "citationLabel": "Critique of Practical Reason, Ak 5:30, Abbott trans.",
+      "originalText": null,
+      "translationText": "Act so that the maxim of thy will can always at the same time hold good as a principle of universal legislation.",
+      "interpretiveNote": "纯粹实践理性的基本法则要求意志的准则能够同时作为普遍立法的原则，而不是由欲望对象或经验利益决定。",
+      "themes": ["moral law", "道德法则", "universal legislation", "普遍立法", "maxim", "准则", "practical reason", "实践理性"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1788 mature practical philosophy; historical English translation",
+      "claimIds": ["CLM-0025", "CLM-0026"],
+      "priority": 98,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-critique-of-judgment/kant-judgment-bernard-1914-pg48433/source.epub",
+  "work": {
+    "id": "kant-critique-of-judgment",
+    "title": "Critique of Judgment",
+    "originalTitle": "Kritik der Urteilskraft",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1790,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Historical English translation of the Critique of Judgment. Distinguish Kant's text from Bernard's introduction and notes."
+  },
+  "edition": {
+    "id": "kant-judgment-bernard-1914-pg48433",
+    "label": "J. H. Bernard translation, second revised edition 1914; Project Gutenberg #48433",
+    "language": "en",
+    "translator": "J. H. Bernard",
+    "editor": null,
+    "publisher": "Macmillan and Co.",
+    "publishedYear": 1914,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/48433",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-critique-of-judgment/kant-judgment-bernard-1914-pg48433/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-judgment-bernard-section-2",
+      "sequence": 1,
+      "locator": "§2; Project Gutenberg #48433, OEBPS/8636900728218303480_48433-h-8.htm.xhtml#s2",
+      "citationLabel": "Critique of Judgment §2, Bernard trans.",
+      "originalText": null,
+      "translationText": "The satisfaction which we combine with the representation of the existence of an object is called interest. Such satisfaction always has reference to the faculty of desire, either as its determining ground or as necessarily connected with its determining ground. Now when the question is if a thing is beautiful, we do not want to know whether anything depends or can depend on the existence of the thing either for myself or for any one else, but how we judge it by mere observation (intuition or reflection). If any one asks me if I find that palace beautiful which I see before me, I may answer: I do not like things of that kind which are made merely to be stared at. Or I can answer like that Iroquois sachem who was pleased in Paris by nothing more than by the cook-shops. Or again after the manner of Rousseau I may rebuke the vanity of the great who waste the sweat of the people on such superfluous things. In fine I could easily convince myself that if I found myself on an uninhabited island without the hope of ever again coming among men, and could conjure up just such a splendid building by my mere wish, I should not even give myself the trouble if I had a sufficiently comfortable hut. This may all be admitted and approved; but we are not now talking of this. We wish only to know if this mere representation of the object is accompanied in me with satisfaction, however indifferent I may be as regards the existence of the object of this representation. We easily see that in saying it is beautiful and in showing that I have taste, I am concerned, not with that in which I depend on the existence of the object, but with that which I make out of this representation in myself. Every one must admit that a judgement about beauty, in which the least interest mingles, is very partial and is not a pure judgement of taste. We must not be in the least prejudiced in favour of the existence of the things, but be quite indifferent in this respect, in order to play the judge in things of taste.",
+      "interpretiveNote": "纯粹审美判断不取决于对象是否实际存在，也不以欲望和利益为根据；它考察的是对象表象本身带来的无利害愉悦。",
+      "themes": ["beauty", "美", "taste", "鉴赏", "disinterested", "无利害", "interest", "利害", "aesthetic judgment", "审美判断"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1790 mature aesthetics; historical English translation",
+      "claimIds": ["CLM-0034"],
+      "priority": 96,
+      "status": "active"
+    }
+  ]
+}

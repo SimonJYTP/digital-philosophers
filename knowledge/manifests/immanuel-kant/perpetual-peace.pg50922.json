@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-perpetual-peace/kant-perpetual-peace-smith-pg50922/source.epub",
+  "work": {
+    "id": "kant-perpetual-peace",
+    "title": "Perpetual Peace: A Philosophical Essay",
+    "originalTitle": "Zum ewigen Frieden. Ein philosophischer Entwurf",
+    "workType": "essay",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1795,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Historical English translation with an editorial introduction and notes. Keep the translator's material distinct from Kant's articles."
+  },
+  "edition": {
+    "id": "kant-perpetual-peace-smith-pg50922",
+    "label": "Mary Campbell Smith translation, 1903; Project Gutenberg #50922",
+    "language": "en",
+    "translator": "Mary Campbell Smith",
+    "editor": null,
+    "publisher": "George Allen & Unwin",
+    "publishedYear": 1903,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/50922",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-perpetual-peace/kant-perpetual-peace-smith-pg50922/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-perpetual-peace-smith-definitive-2",
+      "sequence": 1,
+      "locator": "Second Definitive Article; Project Gutenberg #50922, OEBPS/2842383102359706911_50922-h-4.htm.xhtml",
+      "citationLabel": "Perpetual Peace, Second Definitive Article, Smith trans.",
+      "originalText": null,
+      "translationText": "II.—“The law of nations shall be founded on a federation of free states.” Nations, as states, may be judged like individuals who, living in the natural state of society—that is to say, uncontrolled by external law—injure one another through their very proximity. Every state, for the sake of its own security, may—and ought to—demand that its neighbour should submit itself to conditions, similar to those of the civil society where the right of every individual is guaranteed. This would give rise to a federation of nations which, however, would not have to be a State of nations. That would involve a contradiction. For the term “state” implies the relation of one who rules to those who obey—that is to say, of law-giver to the subject people: and many nations in one state would constitute only one nation, which contradicts our hypothesis, since here we have to consider the right of one nation against another, in so far as they are so many separate states and are not to be fused into one.",
+      "interpretiveNote": "国际和平要求自由国家之间建立法权联盟，但这种联盟不能简单变成一个吞并各民族的世界国家。",
+      "themes": ["perpetual peace", "永久和平", "federation", "联盟", "free states", "自由国家", "international law", "国际法", "right", "法权"],
+      "kind": "doctrine",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1795 public and political philosophy; historical English translation",
+      "claimIds": [],
+      "priority": 94,
+      "status": "active"
+    }
+  ]
+}

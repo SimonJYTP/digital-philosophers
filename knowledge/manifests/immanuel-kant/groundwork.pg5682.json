@@ -1,0 +1,48 @@
+{
+  "philosopherId": "immanuel-kant",
+  "sourceFile": "../../source-files/immanuel-kant/kant-groundwork/kant-groundwork-abbott-pg5682/source.epub",
+  "work": {
+    "id": "kant-groundwork",
+    "title": "Groundwork of the Metaphysics of Morals",
+    "originalTitle": "Grundlegung zur Metaphysik der Sitten",
+    "workType": "book",
+    "originalLanguage": "de",
+    "firstPublishedYear": 1785,
+    "sourceTier": "P1",
+    "rightsStatus": "public-domain",
+    "notes": "Thomas Kingsmill Abbott's historical English translation, titled Fundamental Principles of the Metaphysic of Morals in this edition."
+  },
+  "edition": {
+    "id": "kant-groundwork-abbott-pg5682",
+    "label": "Thomas Kingsmill Abbott translation; Project Gutenberg #5682",
+    "language": "en",
+    "translator": "Thomas Kingsmill Abbott",
+    "editor": null,
+    "publisher": "Project Gutenberg",
+    "publishedYear": 2004,
+    "isbn": null,
+    "sourceUrl": "https://www.gutenberg.org/ebooks/5682",
+    "rightsStatus": "public-domain-us",
+    "licenseNote": "Project Gutenberg metadata states public domain in the USA; verify the law of the deployment jurisdiction before production redistribution.",
+    "r2Key": "sources/immanuel-kant/kant-groundwork/kant-groundwork-abbott-pg5682/source.epub"
+  },
+  "passages": [
+    {
+      "id": "kant-groundwork-abbott-4-421",
+      "sequence": 1,
+      "locator": "Ak 4:421; Second Section; Project Gutenberg #5682, OEBPS/3879057035607202798_5682-h-0.htm.xhtml",
+      "citationLabel": "Groundwork, Ak 4:421, Abbott trans.",
+      "originalText": null,
+      "translationText": "There is therefore but one categorical imperative, namely, this: Act only on that maxim whereby thou canst at the same time will that it should become a universal law.",
+      "interpretiveNote": "行动前应明确自己的准则，并检验自己能否同时意愿该准则成为普遍法则；这不是对预期后果进行投票。",
+      "themes": ["categorical imperative", "定言命令", "universal law", "普遍法则", "maxim", "准则", "duty", "义务"],
+      "kind": "method",
+      "evidenceClass": "P1",
+      "agentUse": "QUALIFIED_FIRST_PERSON",
+      "period": "1785 mature moral philosophy; historical English translation",
+      "claimIds": ["CLM-0027", "CLM-0028"],
+      "priority": 100,
+      "status": "active"
+    }
+  ]
+}
