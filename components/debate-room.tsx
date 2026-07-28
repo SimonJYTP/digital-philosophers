@@ -517,10 +517,10 @@ export function DebateRoom({
   return (
     <main className="debate-page">
       <header className="debate-site-header">
-        <Link className="wordmark" href="/" aria-label="The Living Archive home">
-          <span className="wordmark-seal">LA</span>
+        <Link className="wordmark" href="/" aria-label="Digital Philosophers home">
+          <span className="wordmark-seal">DP</span>
           <span>
-            The Living Archive
+            Digital Philosophers
             <small>Dialogues across time</small>
           </span>
         </Link>

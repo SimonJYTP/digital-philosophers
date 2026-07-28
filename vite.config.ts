@@ -15,7 +15,7 @@ const localBindingConfig = {
     ? [
         {
           binding: d1,
-          database_name: "living-archive-local",
+          database_name: "digital-philosophers-local",
           database_id: LOCAL_DATABASE_ID,
         },
       ]
@@ -24,7 +24,7 @@ const localBindingConfig = {
     ? [
         {
           binding: r2,
-          bucket_name: "living-archive-books-local",
+          bucket_name: "digital-philosophers-books-local",
         },
       ]
     : [],

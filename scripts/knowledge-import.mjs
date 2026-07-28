@@ -288,13 +288,13 @@ await writeFile(
   receiptPath,
   `${JSON.stringify(
     {
-      databaseName: "living-archive-local",
+      databaseName: "digital-philosophers-local",
       editionId,
       fileSha256,
       fileSize: sourceStats.size,
       mimeType,
       passageCount: passages.length,
-      r2Bucket: "living-archive-books-local",
+      r2Bucket: "digital-philosophers-books-local",
       r2Key,
       sourceFile,
       sqlFile: sqlPath,
@@ -353,7 +353,7 @@ if (shouldImportLocal) {
     "r2",
     "object",
     "put",
-    `living-archive-books-local/${r2Key}`,
+    `digital-philosophers-books-local/${r2Key}`,
     `--file=${sourceFile}`,
     `--content-type=${mimeType}`,
     "--local",
@@ -361,7 +361,7 @@ if (shouldImportLocal) {
   runWrangler([
     "d1",
     "execute",
-    "living-archive-local",
+    "digital-philosophers-local",
     `--file=${sqlPath}`,
     "--local",
   ]);

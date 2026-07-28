@@ -1,4 +1,4 @@
-# The Living Archive
+# Digital Philosophers
 
 A small Next.js application where visitors choose Confucius, Socrates,
 Immanuel Kant, G. W. F. Hegel, or Friedrich Nietzsche and hold a streaming

@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <main className="home-shell">
       <header className="site-header">
-        <Link className="wordmark" href="/" aria-label="The Living Archive home">
-          <span className="wordmark-seal">LA</span>
+        <Link className="wordmark" href="/" aria-label="Digital Philosophers home">
+          <span className="wordmark-seal">DP</span>
           <span>
-            The Living Archive
+            Digital Philosophers
             <small>Dialogues across time</small>
           </span>
         </Link>

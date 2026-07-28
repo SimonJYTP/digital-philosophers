@@ -4,8 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "The Living Archive",
-    template: "%s · The Living Archive",
+    default: "Digital Philosophers",
+    template: "%s · Digital Philosophers",
   },
   description:
     "Enter a quiet archive and converse with the voices of philosophy.",
@@ -22,4 +22,3 @@ export default function RootLayout({
     </html>
   );
 }
-

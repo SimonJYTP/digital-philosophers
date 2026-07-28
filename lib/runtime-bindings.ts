@@ -47,7 +47,7 @@ type RuntimeBindings = Readonly<{
   DB?: D1Database;
 }>;
 
-const bindingsKey = Symbol.for("the-living-archive.runtime-bindings");
+const bindingsKey = Symbol.for("digital-philosophers.runtime-bindings");
 
 type GlobalWithBindings = typeof globalThis & {
   [bindingsKey]?: RuntimeBindings;
